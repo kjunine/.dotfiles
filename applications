@@ -1,0 +1,34 @@
+cask install iterm2-beta
+cask install font-inconsolata
+cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package
+
+cask install asepsis
+cask install alfred
+cask install bartender
+cask install totalfinder
+cask install google-chrome
+cask install mplayerx
+
+cask install sublime-text3
+cask install atom
+cask install haroopad
+cask install mou
+cask install scrivener
+cask install sourcetree
+cask install github
+cask install marked
+cask install robomongo
+
+cask install dropbox
+cask install google-drive
+cask install box-sync
+cask install x-mirage
+cask install screenflow
+cask install isolator
+cask install ridibooks
+
+cask install vmware-fusion
+cask install virtualbox
+cask install vagrant
+
+linkapps

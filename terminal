@@ -1,0 +1,11 @@
+install zsh
+
+install git git-flow hub
+
+install vim
+
+install tree curl wget
+
+install terminal-notifier
+
+linkapps

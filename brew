@@ -1,0 +1,13 @@
+doctor
+
+tap homebrew/science
+tap homebrew/versions
+tap homebrew/binary
+
+tap caskroom/cask
+tap caskroom/versions
+tap caskroom/fonts
+
+update
+
+install brew-cask

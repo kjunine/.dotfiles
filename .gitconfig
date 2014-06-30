@@ -1,0 +1,18 @@
+[user]
+	name = Daniel Ku
+	email = kjunine@gmail.com
+[core]
+	autocrlf = input
+	safecrlf = true
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	hi = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	ha = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short --all
+	type = cat-file -t
+	dump = cat-file -p
+	sh = stash
+[color]
+	ui = true
