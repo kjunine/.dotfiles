@@ -7,4 +7,6 @@ install rbenv ruby-build rbenv-gem-rehash
 
 install nvm
 
+install docker boot2docker
+
 linkapps
