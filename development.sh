@@ -6,8 +6,8 @@ brew bundle development
 echo "\n# pyenv\neval \"\$(pyenv init -)\"" >> ~/.zshrc
 source ~/.zshrc
 pyenv install 3.4.1
-pyenv install 2.7.7
-pyenv global 2.7.7
+pyenv install 2.7.8
+pyenv global 3.4.1
 
 # rbenv
 echo "\n# rbenv\neval \"\$(rbenv init -)\"" >> ~/.zshrc
@@ -22,8 +22,9 @@ nvm install 0.10
 nvm alias default 0.10
 
 # pip
-pip install ipython
+pip install awscli
 pip install boto
+pip install ipython
 pip install howdoi
 pip install httpie
 
@@ -33,16 +34,17 @@ gem install rake
 gem install bundler
 gem install pry
 gem install pry-doc
-gem install compass
-gem install jekyll
-gem install middleman
-gem install cocoapods
-gem install thor
 gem install chef
 gem install chef-zero
 gem install knife-solo
 gem install knife-ec2
 gem install tugboat
+gem install iruby
+gem install thor
+gem install compass
+gem install jekyll
+gem install middleman
+gem install cocoapods
 gem install github
 gem install travis
 gem install travis-lint
