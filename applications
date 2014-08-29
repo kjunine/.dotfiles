@@ -11,8 +11,8 @@ cask install mplayerx
 
 cask install sublime-text3
 cask install atom
+cask install gitbook
 cask install haroopad
-cask install mou
 cask install scrivener
 cask install sourcetree
 cask install github
@@ -22,8 +22,10 @@ cask install robomongo
 cask install dropbox
 cask install google-drive
 cask install box-sync
+cask install infinit
 cask install x-mirage
 cask install screenflow
+cask install slack
 cask install isolator
 cask install ridibooks
 

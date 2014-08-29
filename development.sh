@@ -23,6 +23,9 @@ nvm alias default 0.10
 
 # pip
 pip install ipython
+pip install boto
+pip install howdoi
+pip install httpie
 
 # gem
 gem update -f
@@ -30,6 +33,19 @@ gem install rake
 gem install bundler
 gem install pry
 gem install pry-doc
+gem install compass
+gem install jekyll
+gem install middleman
+gem install cocoapods
+gem install thor
+gem install chef
+gem install chef-zero
+gem install knife-solo
+gem install knife-ec2
+gem install tugboat
+gem install github
+gem install travis
+gem install travis-lint
 
 # npm
 npm install -g yo
