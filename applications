@@ -32,5 +32,6 @@ cask install ridibooks
 cask install vmware-fusion
 cask install virtualbox
 cask install vagrant
+cask install vagrant-manager
 
 linkapps
