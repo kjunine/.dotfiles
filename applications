@@ -27,7 +27,6 @@ cask install x-mirage
 cask install screenflow
 cask install slack
 cask install isolator
-cask install ridibooks
 
 cask install vmware-fusion
 cask install virtualbox
