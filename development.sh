@@ -28,6 +28,11 @@ pip install ipython
 pip install howdoi
 pip install httpie
 
+# python 2.7.8
+pyenv shell 2.7.8
+pip install fabric
+pyenv shell --unset
+
 # gem
 gem update -f
 gem install rake
