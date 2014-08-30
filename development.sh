@@ -38,6 +38,7 @@ gem install chef
 gem install chef-zero
 gem install knife-solo
 gem install knife-ec2
+gem install berkshelf
 gem install tugboat
 gem install iruby
 gem install thor
