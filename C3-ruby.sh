@@ -1,27 +1,27 @@
 #!/usr/bin/env zsh
 
-gem update -f
-gem install rake
-gem install bundler
-gem install pry
-gem install pry-doc
-gem install chef
-gem install chef-zero
-gem install knife-solo
-gem install knife-ec2
-gem install berkshelf
-gem install stove
-gem install test-kitchen
-gem install foodcritic
-gem install knife-solo_data_bag
-gem install knife-init
-gem install tugboat
-gem install iruby
-gem install thor
-gem install compass
-gem install jekyll
-gem install middleman
-gem install cocoapods
-gem install github
-gem install travis
-gem install travis-lint
+rbenv exec gem update -f
+rbenv exec gem install rake
+rbenv exec gem install bundler
+rbenv exec gem install pry
+rbenv exec gem install pry-doc
+rbenv exec gem install chef
+rbenv exec gem install chef-zero
+rbenv exec gem install knife-solo
+rbenv exec gem install knife-ec2
+rbenv exec gem install berkshelf
+rbenv exec gem install stove
+rbenv exec gem install test-kitchen
+rbenv exec gem install foodcritic
+rbenv exec gem install knife-solo_data_bag
+rbenv exec gem install knife-init
+rbenv exec gem install tugboat
+rbenv exec gem install iruby
+rbenv exec gem install thor
+rbenv exec gem install compass
+rbenv exec gem install jekyll
+rbenv exec gem install middleman
+rbenv exec gem install cocoapods
+rbenv exec gem install github
+rbenv exec gem install travis
+rbenv exec gem install travis-lint
