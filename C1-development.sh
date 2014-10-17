@@ -23,3 +23,7 @@ echo "\n# nvm\nsource \$(brew --prefix nvm)/nvm.sh" >> ~/.zshrc
 source ~/.zshrc
 nvm install 0.10
 nvm alias default 0.10
+
+pyenv versions
+rbenv versions
+nvm ls
