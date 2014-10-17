@@ -1,9 +1,38 @@
 #!/usr/bin/env zsh
 
-brew bundle applications
+brew cask install iterm2-beta
+brew cask install font-inconsolata
+brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-brew quicklook suspicious-package
 
-# vagrant
-vagrant plugin install sahara
-vagrant plugin install vagrant-berkshelf --plugin-version 2.0.1
-vagrant plugin install vagrant-omnibus
-vagrant plugin install vagrant-aws
+brew cask install asepsis
+brew cask install alfred
+brew cask install bartender
+brew cask install totalfinder
+brew cask install google-chrome
+brew cask install mplayerx
+brew cask install slack
+
+brew cask install sublime-text3
+brew cask install atom
+brew cask install gitbook
+brew cask install haroopad
+brew cask install scrivener
+brew cask install sourcetree
+brew cask install github
+brew cask install marked
+brew cask install robomongo
+
+brew cask install dropbox
+brew cask install google-drive
+brew cask install box-sync
+brew cask install infinit
+brew cask install x-mirage
+brew cask install screenflow
+brew cask install isolator
+
+brew cask install vmware-fusion
+brew cask install virtualbox
+brew cask install vagrant
+brew cask install vagrant-manager
+
+brew linkapps

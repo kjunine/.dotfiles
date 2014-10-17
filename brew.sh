@@ -1,5 +1,17 @@
 #!/usr/bin/env bash
 
-ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-brew bundle brew
+brew doctor
+
+brew tap homebrew/science
+brew tap homebrew/versions
+brew tap homebrew/binary
+
+brew tap caskroom/cask
+brew tap caskroom/versions
+brew tap caskroom/fonts
+
+brew update
+
+brew install brew-cask

@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 
-brew bundle terminal
+brew install zsh
+brew install git git-flow hub
+brew install vim
+brew install tree curl wget
+
+brew linkapps
 
 # zsh
 git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
@@ -21,6 +26,3 @@ ln -s /usr/local/bin/vim /usr/local/bin/vi
 
 # ssh
 ssh-keygen -t rsa -C "kjunine@gmail.com"
-pbcopy < ~/.ssh/id_rsa.pub
-read -p "Press enter after adding the ssh key."
-ssh -T git@github.com
