@@ -1,12 +1,5 @@
 #!/usr/bin/env zsh
 
-# rbenv
-echo "\n# rbenv\neval \"\$(rbenv init -)\"" >> ~/.zshrc
-source ~/.zshrc
-rbenv install 2.1.3
-rbenv global 2.1.3
-
-# gem
 gem update -f
 gem install rake
 gem install bundler
