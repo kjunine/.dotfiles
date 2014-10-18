@@ -10,6 +10,9 @@ brew cask install bartender
 brew cask install totalfinder
 brew cask install google-chrome
 brew cask install mplayerx
+brew cask install onepassword
+brew cask install evernote
+brew cask install caffeine
 brew cask install slack
 
 brew cask install sublime-text3
