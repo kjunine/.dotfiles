@@ -5,6 +5,11 @@ brew install pyenv pyenv-pip-rehash
 brew install rbenv ruby-build rbenv-gem-rehash
 brew install nvm
 brew install docker boot2docker
+brew install mongodb redis
+
+brew install jq
+brew tap peco/peco
+brew install peco
 
 brew linkapps
 

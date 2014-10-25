@@ -14,5 +14,7 @@
 	type = cat-file -t
 	dump = cat-file -p
 	sh = stash
+[push]
+	default = simple
 [color]
 	ui = true
