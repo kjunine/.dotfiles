@@ -15,7 +15,7 @@ brew linkapps
 
 echo "\n# pyenv\neval \"\$(pyenv init -)\"" >> ~/.zshrc
 echo "\n# rbenv\neval \"\$(rbenv init -)\"" >> ~/.zshrc
-echo "\n# nvm\nsource \$(brew --prefix nvm)/nvm.sh" >> ~/.zshrc
+echo "\n# nvm\nexport NVM_DIR=~/.nvm\nsource \$(brew --prefix nvm)/nvm.sh" >> ~/.zshrc
 source ~/.zshrc
 
 pyenv install 3.4.1
