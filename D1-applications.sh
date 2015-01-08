@@ -10,7 +10,7 @@ brew cask install bartender
 brew cask install totalfinder
 brew cask install google-chrome
 brew cask install mplayerx
-brew cask install onepassword
+brew cask install 1password
 brew cask install evernote
 brew cask install caffeine
 brew cask install slack
@@ -32,6 +32,7 @@ brew cask install infinit
 brew cask install x-mirage
 brew cask install screenflow
 brew cask install isolator
+brew cask install ridibooks
 
 brew cask install vmware-fusion
 brew cask install virtualbox
