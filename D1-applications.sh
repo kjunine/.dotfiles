@@ -22,8 +22,10 @@ brew cask install haroopad
 brew cask install scrivener
 brew cask install sourcetree
 brew cask install github
+brew cask install poedit
 brew cask install marked
 brew cask install robomongo
+brew cask install dash
 
 brew cask install dropbox
 brew cask install google-drive
@@ -33,6 +35,7 @@ brew cask install x-mirage
 brew cask install screenflow
 brew cask install isolator
 brew cask install ridibooks
+brew cask install anki
 
 brew cask install vmware-fusion
 brew cask install virtualbox
