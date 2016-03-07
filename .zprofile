@@ -49,11 +49,11 @@ ZSH_THEME="ys"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(osx brew git git-flow)
+plugins=(osx brew git git-flow wd)
 
 # User configuration
 
-export PATH=$HOME/.bin:/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -76,13 +76,8 @@ export EDITOR=vi
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+# Disable sharing history
+unsetopt share_history
+
 # GitHub Token for Homebrew: https://github.com/settings/tokens/new?scopes=&description=Homebrew
 export HOMEBREW_GITHUB_API_TOKEN=
-
-# aliases
-# alias cds="cd ~/Sources"
-# alias cdp="cd ~/Sources/Personal"
-# alias cdds="cd ~/Sources/Personal/deckset"
-# alias cddk="cd ~/Sources/Personal/danielku.com"
-# alias cde="cd ~/Sources/Etc"
-# alias cdt="cd ~/Sources/Test"

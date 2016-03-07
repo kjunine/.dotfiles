@@ -14,7 +14,7 @@ brew install peco
 brew linkapps
 
 # zsh
-git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 cp .zprofile ~/.zprofile
 
