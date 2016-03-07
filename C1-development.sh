@@ -9,10 +9,6 @@ brew install nginx passenger
 brew install sqlite mysql postgresql
 brew install go
 
-brew install jq
-brew tap peco/peco
-brew install peco
-
 brew install imagemagick
 
 brew cask install java

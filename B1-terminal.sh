@@ -5,7 +5,11 @@ brew install git git-flow git-lfs hub
 brew install vim
 brew install openssl
 brew install tree curl wget
+
 brew install dos2unix
+brew install jq
+brew tap peco/peco
+brew install peco
 
 brew linkapps
 
