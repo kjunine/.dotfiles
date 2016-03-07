@@ -1,17 +1,18 @@
 #!/usr/bin/env zsh
 
 brew install nvm
-brew install pyenv pyenv-pip-rehash
-brew install rbenv ruby-build rbenv-gem-rehash
+brew install pyenv
+brew install rbenv
+brew cask install java
+
 brew install docker docker-machine
 brew install mongodb redis elasticsearch
-brew install nginx passenger
+brew install nginx --with-passenger
+brew install passenger
 brew install sqlite mysql postgresql
 brew install go
 
 brew install imagemagick
-
-brew cask install java
 
 brew linkapps
 
@@ -24,15 +25,15 @@ source ~/.zprofile
 # pyenv install -l
 # rbenv install -l
 
-# nvm install 4.3.2
-# nvm alias default 4.3.2
+nvm install 4.3.2
+nvm alias default 4.3.2
 
-# pyenv install 3.5.1
-# pyenv global 3.5.1
+pyenv install 3.5.1
+pyenv global 3.5.1
 
-# rbenv install 2.3.0
-# rbenv global 2.3.0
+rbenv install 2.3.0
+rbenv global 2.3.0
 
-# nvm ls
-# pyenv versions
-# rbenv versions
+nvm ls
+pyenv versions
+rbenv versions
