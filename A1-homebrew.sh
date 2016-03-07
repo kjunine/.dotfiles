@@ -13,4 +13,4 @@ brew tap caskroom/fonts
 
 brew update
 
-brew install brew-cask
+brew cask

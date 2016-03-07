@@ -1,6 +1,5 @@
 #!/usr/bin/env zsh
 
-brew cask install java
 brew install nvm
 brew install pyenv pyenv-pip-rehash
 brew install rbenv ruby-build rbenv-gem-rehash
@@ -15,6 +14,8 @@ brew tap peco/peco
 brew install peco
 
 brew install imagemagick
+
+brew cask install java
 
 brew linkapps
 
