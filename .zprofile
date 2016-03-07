@@ -61,7 +61,6 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 export LANG=ko_KR.UTF-8
-export EDITOR=vi
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -69,6 +68,7 @@ export EDITOR=vi
 # else
 #   export EDITOR='mvim'
 # fi
+export EDITOR=vi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -78,3 +78,11 @@ export EDITOR=vi
 
 # GitHub Token for Homebrew: https://github.com/settings/tokens/new?scopes=&description=Homebrew
 export HOMEBREW_GITHUB_API_TOKEN=
+
+# aliases
+# alias cds="cd ~/Sources"
+# alias cdp="cd ~/Sources/Personal"
+# alias cdds="cd ~/Sources/Personal/deckset"
+# alias cddk="cd ~/Sources/Personal/danielku.com"
+# alias cde="cd ~/Sources/Etc"
+# alias cdt="cd ~/Sources/Test"
