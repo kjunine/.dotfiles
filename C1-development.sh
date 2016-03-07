@@ -1,33 +1,41 @@
 #!/usr/bin/env zsh
 
 brew cask install java
+brew install nvm
 brew install pyenv pyenv-pip-rehash
 brew install rbenv ruby-build rbenv-gem-rehash
-brew install nvm
-brew install docker boot2docker
-brew install mongodb redis
+brew install docker docker-machine
+brew install mongodb redis elasticsearch
+brew install nginx passenger
+brew install sqlite mysql postgresql
+brew install go
 
 brew install jq
 brew tap peco/peco
 brew install peco
 
+brew install imagemagick
+
 brew linkapps
 
-echo "\n# pyenv\neval \"\$(pyenv init -)\"" >> ~/.zshrc
-echo "\n# rbenv\neval \"\$(rbenv init -)\"" >> ~/.zshrc
-echo "\n# nvm\nexport NVM_DIR=~/.nvm\nsource \$(brew --prefix nvm)/nvm.sh" >> ~/.zshrc
-source ~/.zshrc
+echo "\n# nvm\nexport NVM_DIR=~/.nvm\nsource \$(brew --prefix nvm)/nvm.sh" >> ~/.zprofile
+echo "\n# pyenv\neval \"\$(pyenv init -)\"" >> ~/.zprofile
+echo "\n# rbenv\neval \"\$(rbenv init -)\"" >> ~/.zprofile
+source ~/.zprofile
 
-pyenv install 3.4.1
-pyenv install 2.7.8
-pyenv global 3.4.1
+# nvm ls-remote
+# pyenv install -l
+# rbenv install -l
 
-rbenv install 2.1.3
-rbenv global 2.1.3
+# nvm install 4.3.2
+# nvm alias default 4.3.2
 
-nvm install 0.10
-nvm alias default 0.10
+# pyenv install 3.5.1
+# pyenv global 3.5.1
 
-pyenv versions
-rbenv versions
-nvm ls
+# rbenv install 2.3.0
+# rbenv global 2.3.0
+
+# nvm ls
+# pyenv versions
+# rbenv versions

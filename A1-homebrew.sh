@@ -6,7 +6,6 @@ brew doctor
 
 brew tap homebrew/science
 brew tap homebrew/versions
-brew tap homebrew/binary
 
 brew tap caskroom/cask
 brew tap caskroom/versions

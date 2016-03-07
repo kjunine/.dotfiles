@@ -1,16 +1,18 @@
 #!/usr/bin/env bash
 
 brew install zsh
-brew install git git-flow hub
+brew install git git-flow git-lfs hub
 brew install vim
+brew install openssl
 brew install tree curl wget
+brew install dos2unix
 
 brew linkapps
 
 # zsh
 git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
-cp .zshrc ~/.zshrc
+cp .zprofile ~/.zprofile
 
 echo "/usr/local/bin/zsh" | sudo tee -a /etc/shells
 chsh -s /usr/local/bin/zsh

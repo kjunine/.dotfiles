@@ -51,15 +51,17 @@ ZSH_THEME="ys"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(osx brew git git-flow)
 
-source $ZSH/oh-my-zsh.sh
-
 # User configuration
 
 export PATH=$HOME/.bin:/usr/local/bin:/usr/local/sbin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
+source $ZSH/oh-my-zsh.sh
+
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
+export LANG=ko_KR.UTF-8
+export EDITOR=vi
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -73,3 +75,6 @@ export PATH=$HOME/.bin:/usr/local/bin:/usr/local/sbin:$PATH
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+# GitHub Token for Homebrew: https://github.com/settings/tokens/new?scopes=&description=Homebrew
+export HOMEBREW_GITHUB_API_TOKEN=
