@@ -1,7 +1,7 @@
 set nocompatible
 
 filetype on
-filetype indent on
+filetype indent off
 filetype plugin on
 
 syntax enable

@@ -1,8 +1,8 @@
 #!/usr/bin/env zsh
 
 rbenv install -l
-rbenv install 2.3.0
-rbenv global 2.3.0
+rbenv install 2.3.1
+rbenv global 2.3.1
 rbenv versions
 
 rbenv exec gem update -f
@@ -13,6 +13,7 @@ rbenv exec gem install pry-doc
 rbenv exec gem install iruby
 rbenv exec gem install compass
 rbenv exec gem install rails
+rbenv exec gem install cocoapods
 
 # rbenv exec gem install chef
 # rbenv exec gem install chef-zero
@@ -29,7 +30,6 @@ rbenv exec gem install rails
 # rbenv exec gem install thor
 # rbenv exec gem install jekyll
 # rbenv exec gem install middleman
-# rbenv exec gem install cocoapods
 # rbenv exec gem install github
 # rbenv exec gem install travis
 # rbenv exec gem install travis-lint
