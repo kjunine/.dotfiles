@@ -1,9 +1,8 @@
 #!/usr/bin/env zsh
 
 nvm ls-remote
-nvm install 0.10
-nvm install 4.4
-nvm alias default 4.4
+nvm install 4
+nvm alias default 4
 nvm ls
 
 npm install -g yo
