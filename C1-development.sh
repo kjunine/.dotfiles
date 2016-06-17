@@ -16,7 +16,7 @@ brew install imagemagick
 
 brew linkapps
 
-echo "\n# nvm\nexport NVM_DIR=~/.nvm\nsource \$(brew --prefix nvm)/nvm.sh" >> ~/.zprofile
 echo "\n# pyenv\neval \"\$(pyenv init -)\"" >> ~/.zprofile
 echo "\n# rbenv\neval \"\$(rbenv init -)\"" >> ~/.zprofile
+echo "\n# nvm\nexport NVM_DIR=\"\$HOME/.nvm\"\n. \"\$(brew --prefix nvm)/nvm.sh\"" >> ~/.zprofile
 source ~/.zprofile

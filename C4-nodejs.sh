@@ -1,5 +1,7 @@
 #!/usr/bin/env zsh
 
+. "$(brew --prefix nvm)/nvm.sh"
+
 nvm ls-remote
 nvm install 4
 nvm alias default 4
