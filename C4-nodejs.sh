@@ -1,5 +1,6 @@
 #!/usr/bin/env zsh
 
+export NVM_DIR="$HOME/.nvm"
 . "$(brew --prefix nvm)/nvm.sh"
 
 nvm ls-remote
