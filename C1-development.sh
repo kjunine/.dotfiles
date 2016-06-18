@@ -5,13 +5,10 @@ brew install rbenv
 brew install nvm
 brew cask install java
 
-brew install docker docker-machine
 brew install mongodb redis elasticsearch
 brew install passenger
 brew install nginx --with-passenger
 brew install sqlite mysql postgresql
-brew install go
-
 brew install imagemagick
 
 brew linkapps
