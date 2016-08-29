@@ -14,3 +14,5 @@ brew tap caskroom/fonts
 brew update
 
 brew cask
+
+brew install mas
