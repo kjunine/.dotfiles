@@ -5,7 +5,9 @@ export NVM_DIR="$HOME/.nvm"
 
 nvm ls-remote
 nvm install 4
+nvm install 6
 nvm alias default 4
+nvm use default
 nvm ls
 
 npm install -g yo
