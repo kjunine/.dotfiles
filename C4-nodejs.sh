@@ -10,10 +10,15 @@ nvm alias default 4
 nvm use default
 nvm ls
 
+npm install -g npm
+npm install -g node-gyp
+
 npm install -g yo
 npm install -g bower
 npm install -g gulp-cli
 npm install -g grunt-cli
+npm install -g webpack
+npm install -g webpack-dev-server
 npm install -g coffee-script
 npm install -g typescript
 npm install -g typings
