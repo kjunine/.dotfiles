@@ -1,15 +1,5 @@
 #!/usr/bin/env zsh
 
-export NVM_DIR="$HOME/.nvm"
-. "$(brew --prefix nvm)/nvm.sh"
-
-nvm ls-remote
-nvm install 4
-nvm install 6
-nvm alias default 4
-nvm use default
-nvm ls
-
 npm install -g npm
 npm install -g node-gyp
 
