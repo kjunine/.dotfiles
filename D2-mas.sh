@@ -31,7 +31,6 @@ mas install 715768417   # Microsoft Remote Desktop
 mas install 1055511498  # Day One
 mas install 403388562   # Transmit
 mas install 414209656   # Better Rename 9
-mas install 449589707   # Dash
 mas install 847496013   # Deckset
 mas install 489880259   # ScreenShot PSD
 mas install 413965349   # Soulver
