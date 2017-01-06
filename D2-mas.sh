@@ -12,6 +12,7 @@ mas install 443987910   # 1Password
 mas install 867299399   # OmniFocus
 mas install 866773894   # Quiver
 mas install 918858936   # Airmail 3
+mas install 1176895641  # Spark
 mas install 880001334   # Reeder
 mas install 975937182   # Fantastical 2
 mas install 419330170   # Moom
