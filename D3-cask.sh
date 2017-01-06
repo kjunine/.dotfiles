@@ -8,9 +8,10 @@ brew cask install marked
 brew cask install paw
 brew cask install mongochef
 brew cask install sequel-pro
+
+brew cask install sketch
 brew cask install docker
 brew cask install kitematic
-
 brew cask install android-studio
 brew cask install unity
 brew cask install virtualbox
