@@ -30,7 +30,4 @@ git config --global core.excludesfile ~/.gitignore_global
 cp .vimrc ~/.vimrc
 ln -s /usr/local/bin/vim /usr/local/bin/vi
 
-# ssh
-ssh-keygen -t rsa -C "d@nielku.com"
-
 echo "Please restart shell."
