@@ -1,0 +1,2 @@
+Pry.config.pager = false
+

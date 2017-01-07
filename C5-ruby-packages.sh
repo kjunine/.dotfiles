@@ -28,3 +28,7 @@ rbenv exec gem install cocoapods
 # rbenv exec gem install github
 # rbenv exec gem install travis
 # rbenv exec gem install travis-lint
+
+# pry
+cp .pryrc ~/.pryrc
+
