@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-tar -C ~ -zvxf ~/secrets.tar.gz
+tar -C ~ -xzvf ~/secrets.tar.gz
