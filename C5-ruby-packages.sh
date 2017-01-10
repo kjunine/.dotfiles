@@ -9,6 +9,7 @@ rbenv exec gem install iruby
 rbenv exec gem install compass
 rbenv exec gem install rails
 rbenv exec gem install cocoapods
+rbenv exec gem install docker-sync
 
 # rbenv exec gem install chef
 # rbenv exec gem install chef-zero

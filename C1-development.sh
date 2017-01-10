@@ -11,6 +11,7 @@ brew install nginx --with-passenger
 brew install sqlite mysql postgresql
 brew install imagemagick
 brew install yarn
+brew install fswatch
 
 brew linkapps
 
