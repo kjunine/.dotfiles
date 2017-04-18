@@ -19,6 +19,8 @@ npm install -g tslint
 npm install -g csslint
 npm install -g sass-lint
 npm install -g http-server
+npm install -g vue-cli
+npm install -g @angular/cli
 
 # npm install -g gitbook
 # npm install -g hexo-cli
