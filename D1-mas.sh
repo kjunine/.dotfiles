@@ -17,7 +17,6 @@ mas install 880001334   # Reeder
 mas install 975937182   # Fantastical 2
 mas install 419330170   # Moom
 mas install 955848755   # Theine
-mas install 1114591412  # Memory Clean 2
 mas install 672206759   # Disk Diag
 mas install 540348655   # Monosnap
 mas install 766939888   # 1Keyboard
