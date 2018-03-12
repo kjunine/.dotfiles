@@ -13,6 +13,7 @@ brew install python
 brew install ruby
 brew install fasd
 brew install fzf
+brew cask install iterm2
 
 # zsh
 cp .zshrc ~/.zshrc

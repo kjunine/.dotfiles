@@ -4,7 +4,6 @@ brew cask install tuxera-ntfs
 brew cask install google-chrome
 brew cask install google-backup-and-sync
 brew cask install dropbox
-brew cask install iterm2
 brew cask install alfred
 brew cask install bartender
 brew cask install istat-menus
