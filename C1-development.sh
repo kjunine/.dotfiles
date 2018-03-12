@@ -5,15 +5,17 @@ brew install rbenv
 brew install nvm
 brew cask install java
 
-brew install mongodb redis elasticsearch
+brew install mongodb
+brew install redis
+brew install elasticsearch
 brew install passenger
 brew install nginx --with-passenger
-brew install sqlite mysql postgresql
+brew install sqlite
+brew install mysql
+brew install postgresql
 brew install imagemagick
 brew install yarn
 brew install fswatch
-
-brew linkapps
 
 echo "\n# pyenv\neval \"\$(pyenv init -)\"" >> ~/.zshrc
 echo "\n# rbenv\neval \"\$(rbenv init -)\"" >> ~/.zshrc

@@ -1,14 +1,18 @@
 #!/usr/bin/env bash
 
-brew install zsh antigen
-brew install vim nvim
-brew install git git-flow git-lfs
+brew install zsh
+brew install antigen
+brew install vim
+brew install neovim
+brew install git
+brew install git-flow
+brew install git-lfs
 brew install tmux
-brew install node python ruby
+brew install node
+brew install python
+brew install ruby
 brew install fasd
 brew install fzf
-
-brew linkapps
 
 # zsh
 cp .zshrc ~/.zshrc
@@ -27,8 +31,8 @@ git config --global core.excludesfile ~/.gitignore_global
 
 # tmux
 git clone https://github.com/gpakosz/.tmux.git ~/.tmux
-ln -s -f .tmux/.tmux.conf ~/.tmux.conf
-cp .tmux/.tmux.conf.local ~
+ln -s -f ~/.tmux/.tmux.conf ~/.tmux.conf
+cp ~/.tmux/.tmux.conf.local ~
 gem install tmuxinator
 
 echo "Please restart shell."
