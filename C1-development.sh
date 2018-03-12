@@ -15,7 +15,7 @@ brew install fswatch
 
 brew linkapps
 
-echo "\n# pyenv\neval \"\$(pyenv init -)\"" >> ~/.zprofile
-echo "\n# rbenv\neval \"\$(rbenv init -)\"" >> ~/.zprofile
-echo "\n# nvm\nexport NVM_DIR=\"\$HOME/.nvm\"\n. \"\$(brew --prefix nvm)/nvm.sh\"" >> ~/.zprofile
-source ~/.zprofile
+echo "\n# pyenv\neval \"\$(pyenv init -)\"" >> ~/.zshrc
+echo "\n# rbenv\neval \"\$(rbenv init -)\"" >> ~/.zshrc
+echo "\n# nvm\nexport NVM_DIR=\"\$HOME/.nvm\"\n. \"/usr/local/opt/nvm/nvm.sh\"" >> ~/.zshrc
+source ~/.zshrc

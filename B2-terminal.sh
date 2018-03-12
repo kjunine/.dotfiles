@@ -1,33 +1,34 @@
 #!/usr/bin/env bash
 
-brew install zsh
-brew install git git-flow git-lfs hub
-brew install vim
-brew install openssl
-brew install tree curl wget
-
-brew install dos2unix
-brew install jq
-brew tap peco/peco
-brew install peco
+brew install zsh antigen
+brew install vim nvim
+brew install git git-flow git-lfs
+brew install tmux
+brew install node python ruby
+brew install fasd
+brew install fzf
 
 brew linkapps
 
 # zsh
-git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
-
-cp .zprofile ~/.zprofile
+cp .zshrc ~/.zshrc
 
 echo "/usr/local/bin/zsh" | sudo tee -a /etc/shells
 chsh -s /usr/local/bin/zsh
+
+# vim
+ln -s /usr/local/bin/vim /usr/local/bin/vi
+curl -sLf https://spacevim.org/install.sh | bash
 
 # git
 cp .gitconfig ~/.gitconfig
 cp .gitignore_global ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
 
-# vim
-cp .vimrc ~/.vimrc
-ln -s /usr/local/bin/vim /usr/local/bin/vi
+# tmux
+git clone https://github.com/gpakosz/.tmux.git ~/.tmux
+ln -s -f .tmux/.tmux.conf ~/.tmux.conf
+cp .tmux/.tmux.conf.local ~
+gem install tmuxinator
 
 echo "Please restart shell."
