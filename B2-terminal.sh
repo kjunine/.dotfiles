@@ -27,6 +27,7 @@ chsh -s /usr/local/bin/zsh
 
 # vim
 ln -s /usr/local/bin/vim /usr/local/bin/vi
+mkdir ~/.config
 curl -sLf https://spacevim.org/install.sh | bash
 
 # git
