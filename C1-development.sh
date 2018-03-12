@@ -4,6 +4,7 @@ brew install pyenv
 brew install rbenv
 brew install nvm
 brew cask install java
+brew cask install java8
 
 brew install mongodb
 brew install redis
