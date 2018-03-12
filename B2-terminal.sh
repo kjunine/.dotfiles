@@ -13,6 +13,10 @@ brew install python
 brew install ruby
 brew install fasd
 brew install fzf
+brew install dos2unix
+brew install autossh
+brew install tree
+brew install wget
 brew cask install iterm2
 
 # zsh

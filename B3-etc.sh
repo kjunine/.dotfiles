@@ -1,9 +1,5 @@
 #!/usr/bin/env zsh
 
-brew install dos2unix
-brew install autossh
-brew install tree
-brew install wget
 brew install hub
 brew install tig
 brew install jq
