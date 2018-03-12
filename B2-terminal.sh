@@ -36,4 +36,8 @@ ln -s -f ~/.tmux/.tmux.conf ~/.tmux.conf
 cp ~/.tmux/.tmux.conf.local ~
 gem install tmuxinator
 
+# iterm2
+wget https://github.com/sindresorhus/iterm2-snazzy/raw/master/Snazzy.itermcolors ~/Downloads/
+open ~/Downloads/Snazzy.itermcolors
+
 echo "Please restart shell."
