@@ -16,8 +16,14 @@ brew cask install ngrok
 # brew cask search /^font-/
 brew cask install font-inconsolata
 brew cask install font-noto-sans-cjk-kr
+brew cask install font-noto-mono
 brew cask install font-roboto
 brew cask install font-roboto-mono
+brew cask install font-inconsolata-for-powerline
+brew cask install font-inconsolata-dz-for-powerline
+brew cask install font-inconsolata-g-for-powerline
+brew cask install font-noto-mono-for-powerline
+brew cask install font-roboto-mono-for-powerline
 brew cask install font-hack-nerd-font
 
 # https://github.com/sindresorhus/quick-look-plugins
