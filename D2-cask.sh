@@ -13,4 +13,3 @@ brew cask install sourcetree
 brew cask install dash
 brew cask install mplayerx
 brew cask install battle-net
-brew cask install league-of-legends
