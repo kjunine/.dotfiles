@@ -29,3 +29,6 @@ alias vimdiff='nvim -d'
 alias oldvim="\vim"
 alias v='f -e nvim'
 alias mux="tmuxinator"
+
+unsetopt share_history
+
