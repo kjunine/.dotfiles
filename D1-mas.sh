@@ -44,3 +44,6 @@ mas install 866773894   # Quiver
 mas install 406056744   # Evernote
 mas install 867299399   # OmniFocus
 mas install 623795237   # Ulysses
+
+sudo xcodebuild -license accept
+
