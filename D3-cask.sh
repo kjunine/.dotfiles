@@ -13,4 +13,4 @@ brew cask install teamviewer
 brew cask install docker
 brew cask install virtualbox
 brew cask install android-studio
-brew cask install unity
+brew cask install unity-hub
