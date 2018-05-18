@@ -1,5 +1,6 @@
 #!/usr/bin/env zsh
 
+nvm use default
 npm install -g npm
 npm install -g node-gyp
 
