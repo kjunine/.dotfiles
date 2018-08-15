@@ -4,9 +4,6 @@ nvm use default
 npm install -g npm
 npm install -g node-gyp
 
-npm install -g bower
-npm install -g gulp-cli
-npm install -g grunt-cli
 npm install -g webpack
 npm install -g webpack-dev-server
 npm install -g coffeescript

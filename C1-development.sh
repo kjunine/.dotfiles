@@ -15,8 +15,6 @@ brew install sqlite
 brew install mysql
 brew install postgresql
 brew install imagemagick
-brew install yarn
-brew install fswatch
 
 echo "\n# pyenv\neval \"\$(pyenv init -)\"" >> ~/.zshrc
 echo "\n# rbenv\neval \"\$(rbenv init -)\"" >> ~/.zshrc
