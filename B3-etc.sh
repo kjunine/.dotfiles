@@ -8,6 +8,9 @@ brew install neofetch
 brew install lnav
 brew cask install ngrok
 
+brew install mkcert
+brew install nss
+
 # https://github.com/caskroom/homebrew-fonts
 # brew cask search /^font-/
 brew cask install font-inconsolata

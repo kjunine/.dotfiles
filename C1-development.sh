@@ -12,11 +12,12 @@ brew install elasticsearch
 brew install passenger
 brew install nginx --with-passenger
 brew install sqlite
-brew install mysql
+brew install mysql@5.7
 brew install postgresql
 brew install imagemagick
 
-echo "\n# pyenv\neval \"\$(pyenv init -)\"" >> ~/.zshrc
-echo "\n# rbenv\neval \"\$(rbenv init -)\"" >> ~/.zshrc
-echo "\n# nvm\nexport NVM_DIR=\"\$HOME/.nvm\"\n. \"/usr/local/opt/nvm/nvm.sh\"" >> ~/.zshrc
+echo "# pyenv\neval \"\$(pyenv init -)\"\n" >> ~/.zshrc
+echo "# rbenv\neval \"\$(rbenv init -)\"\n" >> ~/.zshrc
+echo "# nvm\nexport NVM_DIR=\"\$HOME/.nvm\"\n. \"/usr/local/opt/nvm/nvm.sh\"\n" >> ~/.zshrc
+echo "# mysql@5.7\nexport PATH=\"/usr/local/opt/mysql@5.7/bin:\$PATH\"\n" >> ~/.zshrc
 source ~/.zshrc
