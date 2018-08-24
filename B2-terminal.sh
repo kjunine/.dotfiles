@@ -13,6 +13,8 @@ brew install python
 brew install ruby
 brew install fasd
 brew install fzf
+brew install ack
+brew install the_silver_searcher
 brew install dos2unix
 brew install autossh
 brew install tree
