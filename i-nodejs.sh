@@ -1,5 +1,12 @@
 #!/usr/bin/env zsh
 
+mkdir ~/.nvm
+source ~/.zshrc
+nvm install 8
+nvm alias default 8
+nvm use default
+nvm ls
+
 nvm use default
 npm install -g npm
 npm install -g node-gyp

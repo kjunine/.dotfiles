@@ -46,4 +46,3 @@ mas install 867299399   # OmniFocus
 mas install 623795237   # Ulysses
 
 sudo xcodebuild -license accept
-
