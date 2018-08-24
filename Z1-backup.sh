@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-tar -C ~ --exclude=.ssh/known_hosts -czvf ~/secrets.tar.gz .aws .ssh
+tar -C ~ -czvf ~/secrets.tar.gz .aws .ssh/config
