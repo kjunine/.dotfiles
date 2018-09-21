@@ -20,7 +20,7 @@ antigen apply
 
 # etc
 
-export LANG=ko_KR.UTF-8
+export LANG=en_US.UTF-8
 export EDITOR=nvim
 
 alias vim="nvim"
