@@ -12,6 +12,7 @@ npm install -g npm
 npm install -g node-gyp
 
 npm install -g webpack
+npm install -g webpack-cli @webpack-cli/init
 npm install -g webpack-dev-server
 npm install -g coffeescript
 npm install -g typescript
