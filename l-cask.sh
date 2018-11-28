@@ -8,6 +8,7 @@ brew cask install dropbox
 brew cask install alfred
 brew cask install bartender
 brew cask install istat-menus
+brew cask install notion
 brew cask install firefox
 
 brew cask install skype
