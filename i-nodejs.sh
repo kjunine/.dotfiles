@@ -2,8 +2,8 @@
 
 mkdir ~/.nvm
 source ~/.zshrc
-nvm install 8
-nvm alias default 8
+nvm install 10
+nvm alias default 10
 nvm use default
 nvm ls
 
