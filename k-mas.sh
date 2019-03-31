@@ -7,6 +7,7 @@ mas install 408981434   # iMovie
 mas install 424389933   # Final Cut Pro
 mas install 634148309   # Logic Pro X
 mas install 434290957   # Motion
+mas install 424390742   # Compressor
 mas install 409183694   # Keynote
 mas install 409201541   # Pages
 mas install 409203825   # Numbers
