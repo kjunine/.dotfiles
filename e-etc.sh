@@ -15,6 +15,7 @@ brew install nss
 # https://github.com/caskroom/homebrew-fonts
 # brew cask search /^font-/
 brew cask install font-inconsolata
+brew cask install font-fira-code
 brew cask install font-noto-sans-cjk-kr
 brew cask install font-noto-mono
 brew cask install font-roboto
