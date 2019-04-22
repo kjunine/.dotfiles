@@ -11,6 +11,7 @@ brew cask install istat-menus
 brew cask install notion
 brew cask install firefox
 brew cask install snagit
+brew cask install screenflow
 brew cask install mplayerx
 brew cask install atom
 brew cask install sublime-text
