@@ -23,5 +23,5 @@ npm install -g csslint
 npm install -g sass-lint
 npm install -g http-server
 npm install -g wait-on
-npm install -g vue-cli
+npm install -g @vue/cli
 npm install -g @angular/cli
