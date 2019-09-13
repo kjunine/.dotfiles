@@ -6,9 +6,6 @@ brew install jq
 brew install asciinema
 brew install neofetch
 brew install lnav
-brew cask install ngrok
-brew cask install aws-vault
-
 brew install mkcert
 brew install nss
 

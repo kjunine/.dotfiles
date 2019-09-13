@@ -4,17 +4,20 @@ brew install pyenv
 brew install rbenv
 brew install nvm
 brew cask install java
-brew cask install java8
 
-brew install mongodb
+brew tap mongodb/brew
+brew install mongodb-community
 brew install redis
-brew install elasticsearch
+brew tap elastic/tap
+brew install elastic/tap/elasticsearch-full
 brew install passenger
-brew install nginx --with-passenger
+brew install nginx
 brew install sqlite
 brew install mysql
 brew install postgresql
 brew install imagemagick
+brew cask install ngrok
+brew cask install aws-vault
 
 echo "# pyenv\neval \"\$(pyenv init -)\"\n" >> ~/.zshrc
 echo "# rbenv\neval \"\$(rbenv init -)\"\n" >> ~/.zshrc
