@@ -16,7 +16,6 @@ mas install 1091189122  # Bear
 mas install 904280696   # Things 3
 mas install 918858936   # Airmail 3
 mas install 975937182   # Fantastical 2
-mas install 803453959   # Slack
 mas install 869223134   # KakaoTalk
 mas install 419330170   # Moom
 mas install 955848755   # Theine

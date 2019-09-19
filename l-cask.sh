@@ -9,6 +9,7 @@ brew cask install alfred
 brew cask install bartender
 brew cask install istat-menus
 brew cask install notion
+brew cask install slack
 brew cask install firefox
 brew cask install snagit
 brew cask install screenflow
