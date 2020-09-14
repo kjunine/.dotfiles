@@ -2,7 +2,7 @@
 
 brew cask install tuxera-ntfs
 brew cask install authy
-brew cask install google-chrome-beta
+brew cask install google-chrome
 brew cask install google-backup-and-sync
 brew cask install google-drive-file-stream
 brew cask install dropbox
