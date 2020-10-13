@@ -22,7 +22,6 @@ mas install 955848755   # Theine
 mas install 540348655   # Monosnap
 mas install 880001334   # Reeder
 mas install 413965349   # Soulver
-mas install 847496013   # Deckset
 mas install 1055511498  # Day One
 mas install 1289583905  # Pixelmator Pro
 mas install 407963104   # Pixelmator
