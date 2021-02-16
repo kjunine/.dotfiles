@@ -16,5 +16,7 @@
 	sh = stash
 [push]
 	default = simple
+[pull]
+	rebase = false
 [color]
 	ui = true
