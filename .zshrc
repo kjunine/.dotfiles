@@ -30,6 +30,7 @@ alias oldvim="\vim"
 alias v='f -e nvim'
 alias mux="tmuxinator"
 alias gfp="gf -p"
+alias gcob="gco -b"
 
 unsetopt share_history
 
