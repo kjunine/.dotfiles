@@ -37,7 +37,6 @@ mas install 1055273043  # PDF Expert
 mas install 492835684   # Bandizip X
 mas install 639764244   # Xee³
 mas install 461788075   # Movist
-mas install 403388562   # Transmit
 mas install 568020055   # Scapple
 
 # mas install 672206759   # Disk Diag
@@ -53,3 +52,4 @@ mas install 568020055   # Scapple
 # mas install 406056744   # Evernote
 # mas install 867299399   # OmniFocus
 # mas install 623795237   # Ulysses
+# mas install 403388562   # Transmit
