@@ -30,6 +30,7 @@ mas install 419330170   # Moom
 mas install 955848755   # Theine
 mas install 1055511498  # Day One
 mas install 413965349   # Soulver
+mas install 1444383602  # GoodNotes
 
 mas install 1289583905  # Pixelmator Pro
 mas install 777874532   # Cinemagraph Pro
