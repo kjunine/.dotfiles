@@ -14,9 +14,13 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 
 antigen bundle mafredri/zsh-async
-antigen bundle sindresorhus/pure
+#antigen bundle sindresorhus/pure
 
 antigen apply
+
+# pure
+autoload -U promptinit; promptinit
+prompt pure
 
 # etc
 

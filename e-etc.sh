@@ -1,4 +1,5 @@
 #!/usr/bin/env zsh
+set -x
 
 brew install hub
 brew install tig

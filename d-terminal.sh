@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
+set -x
 
 brew install zsh
 brew install antigen
+brew install pure
 brew install vim
 brew install neovim
 brew install git

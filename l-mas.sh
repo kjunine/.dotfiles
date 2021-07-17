@@ -1,4 +1,7 @@
 #!/usr/bin/env zsh
+set -x
+
+brew install mas
 
 mas install 497799835   # Xcode
 mas install 640199958   # Developer

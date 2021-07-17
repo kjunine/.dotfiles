@@ -1,4 +1,5 @@
 #!/usr/bin/env zsh
+set -x
 
 brew install tuxera-ntfs
 brew install authy
@@ -29,6 +30,6 @@ brew install docker
 brew install virtualbox
 brew install android-studio
 brew install unity-hub
-brew install mplayerx
-brew install handbrake
-brew install adapter
+#brew install mplayerx
+#brew install handbrake
+#brew install adapter

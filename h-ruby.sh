@@ -1,7 +1,8 @@
 #!/usr/bin/env zsh
+set -x
 
-rbenv install 2.6.4
-rbenv global 2.6.4
+rbenv install 3.0.2
+rbenv global 3.0.2
 rbenv versions
 
 rbenv exec gem update -f
