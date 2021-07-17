@@ -26,11 +26,11 @@ brew install font-roboto-mono-for-powerline
 brew install font-hack-nerd-font
 
 # https://github.com/sindresorhus/quick-look-plugins
-brew install qlcolorcode
-brew install qlstephen
-brew install qlmarkdown
-brew install quicklook-json
-brew install qlimagesize
-brew install qlvideo
-brew install suspicious-package
-brew install betterzip
+# brew install qlcolorcode
+# brew install qlstephen
+# brew install qlmarkdown
+# brew install quicklook-json
+# brew install qlimagesize
+# brew install qlvideo
+# brew install suspicious-package
+# brew install betterzip

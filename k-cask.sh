@@ -5,7 +5,6 @@ brew install tuxera-ntfs
 brew install authy
 brew install google-chrome
 brew install google-drive
-brew install dropbox
 brew install alfred
 brew install bartender
 brew install istat-menus
@@ -17,8 +16,6 @@ brew install screenflow
 brew install marked
 brew install deckset
 brew install visual-studio-code
-brew install atom
-brew install sublime-text
 brew install sourcetree
 brew install dash
 brew install paw
@@ -30,6 +27,6 @@ brew install docker
 brew install virtualbox
 brew install android-studio
 brew install unity-hub
-#brew install mplayerx
-#brew install handbrake
-#brew install adapter
+# brew install mplayerx
+# brew install handbrake
+# brew install adapter
