@@ -10,6 +10,4 @@ brew tap homebrew/cask-fonts
 
 brew update
 
-brew cask
-
 brew install mas
