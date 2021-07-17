@@ -19,7 +19,7 @@ brew install dos2unix
 brew install autossh
 brew install tree
 brew install wget
-brew cask install iterm2
+brew install iterm2
 
 # zsh
 cp .zshrc ~/.zshrc

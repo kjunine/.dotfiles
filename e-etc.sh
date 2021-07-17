@@ -10,26 +10,26 @@ brew install mkcert
 brew install nss
 
 # https://github.com/caskroom/homebrew-fonts
-# brew cask search /^font-/
-brew cask install font-inconsolata
-brew cask install font-fira-code
-brew cask install font-noto-sans-cjk-kr
-brew cask install font-noto-mono
-brew cask install font-roboto
-brew cask install font-roboto-mono
-brew cask install font-inconsolata-for-powerline
-brew cask install font-inconsolata-dz-for-powerline
-brew cask install font-inconsolata-g-for-powerline
-brew cask install font-noto-mono-for-powerline
-brew cask install font-roboto-mono-for-powerline
-brew cask install font-hack-nerd-font
+# brew search /^font-/
+brew install font-inconsolata
+brew install font-fira-code
+brew install font-noto-sans-cjk-kr
+brew install font-noto-mono
+brew install font-roboto
+brew install font-roboto-mono
+brew install font-inconsolata-for-powerline
+brew install font-inconsolata-dz-for-powerline
+brew install font-inconsolata-g-for-powerline
+brew install font-noto-mono-for-powerline
+brew install font-roboto-mono-for-powerline
+brew install font-hack-nerd-font
 
 # https://github.com/sindresorhus/quick-look-plugins
-brew cask install qlcolorcode
-brew cask install qlstephen
-brew cask install qlmarkdown
-brew cask install quicklook-json
-brew cask install qlimagesize
-brew cask install qlvideo
-brew cask install suspicious-package
-brew cask install betterzip
+brew install qlcolorcode
+brew install qlstephen
+brew install qlmarkdown
+brew install quicklook-json
+brew install qlimagesize
+brew install qlvideo
+brew install suspicious-package
+brew install betterzip

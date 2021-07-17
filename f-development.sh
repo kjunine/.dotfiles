@@ -3,7 +3,7 @@
 brew install pyenv
 brew install rbenv
 brew install nvm
-brew cask install java
+brew install java
 
 brew tap mongodb/brew
 brew install mongodb-community
@@ -16,8 +16,8 @@ brew install sqlite
 brew install mysql
 brew install postgresql
 brew install imagemagick
-brew cask install ngrok
-brew cask install aws-vault
+brew install ngrok
+brew install aws-vault
 
 echo "# pyenv\neval \"\$(pyenv init -)\"\n" >> ~/.zshrc
 echo "# rbenv\neval \"\$(rbenv init -)\"\n" >> ~/.zshrc
