@@ -35,6 +35,7 @@ alias v='f -e nvim'
 alias mux="tmuxinator"
 alias gfp="gf -p"
 alias gcob="gco -b"
+alias gcot="gco -t"
 
 unsetopt share_history
 
