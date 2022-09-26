@@ -24,7 +24,7 @@ mas install 823766827   # OneDrive
 mas install 1274495053  # Microsoft To Do
 mas install 1295203466  # Microsoft Remote Desktop
 
-mas install 1333542190  # 1Password
+# mas install 1333542190  # 1Password
 mas install 904280696   # Things
 mas install 918858936   # Airmail
 mas install 975937182   # Fantastical
