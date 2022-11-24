@@ -38,4 +38,3 @@ alias gcob="gco -b"
 alias gcot="gco -t"
 
 unsetopt share_history
-
