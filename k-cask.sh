@@ -4,21 +4,21 @@ set -x
 brew install tuxera-ntfs
 brew install 1password
 brew install authy
-brew install google-chrome
-brew install google-drive
+# brew install google-chrome
+# brew install google-drive
 brew install alfred
 brew install bartender
-brew install istat-menus
+# brew install istat-menus
 brew install obsidian
 brew install notion
-brew install slack
+# brew install slack
 brew install firefox
 brew install snagit
-brew install screenflow
-brew install visual-studio-code
-brew install sourcetree
-brew install docker
-brew install unity-hub
+# brew install screenflow
+# brew install visual-studio-code
+# brew install sourcetree
+# brew install docker
+# brew install unity-hub
 
 # brew install android-studio
 # brew install virtualbox

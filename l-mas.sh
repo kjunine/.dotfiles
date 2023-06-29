@@ -6,15 +6,15 @@ brew install mas
 mas install 497799835   # Xcode
 mas install 640199958   # Developer
 mas install 1496833156  # Playgrounds
-mas install 682658836   # GarageBand
-mas install 408981434   # iMovie
-mas install 424389933   # Final Cut Pro
-mas install 634148309   # Logic Pro X
-mas install 434290957   # Motion
-mas install 424390742   # Compressor
-mas install 409183694   # Keynote
-mas install 409201541   # Pages
-mas install 409203825   # Numbers
+# mas install 682658836   # GarageBand
+# mas install 408981434   # iMovie
+# mas install 424389933   # Final Cut Pro
+# mas install 634148309   # Logic Pro X
+# mas install 434290957   # Motion
+# mas install 424390742   # Compressor
+# mas install 409183694   # Keynote
+# mas install 409201541   # Pages
+# mas install 409203825   # Numbers
 
 mas install 918858936   # Airmail
 mas install 975937182   # Fantastical
@@ -24,9 +24,9 @@ mas install 955848755   # Theine
 mas install 413965349   # Soulver
 
 mas install 1289583905  # Pixelmator Pro
-mas install 777874532   # Cinemagraph Pro
+# mas install 777874532   # Cinemagraph Pro
 mas install 1055273043  # PDF Expert
-mas install 492835684   # Bandizip X
+# mas install 492835684   # Bandizip X
 
 # mas install 462058435   # Microsoft Excel
 # mas install 462054704   # Microsoft Word

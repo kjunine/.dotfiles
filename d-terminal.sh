@@ -1,52 +1,56 @@
 #!/usr/bin/env bash
 set -x
 
-brew install zsh
-brew install antigen
-brew install pure
-brew install vim
-brew install neovim
-brew install git
-brew install git-flow
-brew install git-lfs
-brew install tmux
-brew install node
-brew install python
-brew install ruby
-brew install fasd
-brew install fzf
-brew install ack
-brew install the_silver_searcher
-brew install dos2unix
-brew install autossh
-brew install tree
+brew install curl
 brew install wget
+brew install tree
+
+# iterm2
 brew install iterm2
+brew install zsh
+echo "/opt/homebrew/bin/zsh" | sudo tee -a /etc/shells
+chsh -s  /opt/homebrew/bin/zsh
+
+curl https://github.com/sindresorhus/iterm2-snazzy/raw/main/Snazzy.itermcolors -o ~/Downloads/Snazzy.itermcolors
+open ~/Downloads/Snazzy.itermcolors
+curl https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Dracula.itermcolors -o ~/Downloads/Dracula.itermcolors
+open ~/Downloads/Dracula.itermcolors
+
+echo "Please restart shell."
 
 # zsh
-cp .zshrc ~/.zshrc
+#brew install zsh
+#echo "/opt/homebrew/bin/zsh" | sudo tee -a /etc/shells
+#chsh -s  /opt/homebrew/bin/zsh
 
-echo "/usr/local/bin/zsh" | sudo tee -a /etc/shells
-chsh -s /usr/local/bin/zsh
+# https://github.com/ohmyzsh/ohmyzsh#basic-installation
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# https://github.com/romkatv/powerlevel10k#oh-my-zsh
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
+brew install gnu-sed
+gsed -i'.bak' 's+ZSH_THEME="robbyrussell"+ZSH_THEME="powerlevel10k/powerlevel10k"+g' ~/.zshrc
+
+echo "# etc\nexport LANG=en_US.UTF-8\n" >> ~/.zshrc
 
 # vim
-ln -s /usr/local/bin/vim /usr/local/bin/vi
+brew install vim
+brew install neovim
+
+# https://spacevim.org/quick-start-guide/#linux-and-macos
 mkdir ~/.config
 curl -sLf https://spacevim.org/install.sh | bash
 
+echo "# vim\nexport EDITOR=nvim\nalias vim=\"nvim\"\nalias vi=\"nvim\"\n" >> ~/.zshrc
+
+
 # git
+brew install git
+brew install gh
+# brew install git-flow
+# brew install git-lfs
+
 cp .gitconfig ~/.gitconfig
 cp .gitignore_global ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
-
-# tmux
-git clone https://github.com/gpakosz/.tmux.git ~/.tmux
-ln -s -f ~/.tmux/.tmux.conf ~/.tmux.conf
-cp ~/.tmux/.tmux.conf.local ~
-gem install tmuxinator
-
-# iterm2
-wget https://github.com/sindresorhus/iterm2-snazzy/raw/main/Snazzy.itermcolors -O ~/Downloads/Snazzy.itermcolors
-open ~/Downloads/Snazzy.itermcolors
-
-echo "Please restart shell."
