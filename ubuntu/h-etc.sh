@@ -7,15 +7,16 @@ sudo apt install tree
 
 # https://www.lesstif.com/lpt/modern-unix-linux-command-line-119963724.html
 
-# zoxide
+# https://github.com/ajeetdsouza/zoxide
 curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash
 echo '# zoxide
 export PATH="$HOME/.local/bin:$PATH"
 eval "$(zoxide init zsh)"
 ' >> ~/.zshrc && source ~/.zshrc
 
-# fzf
-
+# https://github.com/junegunn/fzf
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+echo "# fzf" >> ~/.zshrc && ~/.fzf/install && source ~/.zshrc
 
 # https://brew.sh/
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
