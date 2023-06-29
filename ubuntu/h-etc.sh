@@ -20,6 +20,16 @@ echo "# fzf" >> ~/.zshrc && ~/.fzf/install && source ~/.zshrc
 
 # https://brew.sh/
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+(echo; echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"') >> ~/.zprofile
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+sudo apt-get install build-essential
+brew install gcc
+brew doctor
+
+# yq
+brew install yq
+# jq
+brew install jq
 
 # https://github.com/99designs/aws-vault
 brew install aws-vault
