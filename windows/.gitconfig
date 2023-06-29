@@ -1,0 +1,21 @@
+[user]
+	name = Daniel Kyojun Ku
+	email = d@nielku.com
+[core]
+	autocrlf = true
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	hi = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	ha = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short --all
+	type = cat-file -t
+	dump = cat-file -p
+	sh = stash
+[push]
+	default = simple
+[pull]
+	rebase = false
+[color]
+	ui = true
