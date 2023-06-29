@@ -1,11 +1,16 @@
 #!/usr/bin/env zsh
 set -x
 
+# nvm
+brew install nvm
+
+echo '# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
+' >> ~/.zshrc && source ~/.zshrc
+
 mkdir ~/.nvm
-pyenv shell 3.10
-nvm install 14
-pyenv shell --unset
-nvm install 16
 nvm install 18
 nvm alias default 18
 nvm use default
@@ -19,7 +24,6 @@ npm install -g wait-on
 
 npm install -g typescript
 npm install -g eslint
-npm install -g tslint
 npm install -g csslint
 npm install -g sass-lint
 # npm install -g @vue/cli
