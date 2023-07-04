@@ -26,10 +26,22 @@ sudo apt-get install build-essential
 brew install gcc
 brew doctor
 
-# yq
+# https://github.com/mikefarah/yq#macos--linux-via-homebrew
 brew install yq
-# jq
+# https://jqlang.github.io/jq/download/
 brew install jq
+
+# https://kustomize.io/
+brew install kustomize
+
+# https://helm.sh/
+brew install helm
+# https://github.com/databus23/helm-diff
+helm plugin install https://github.com/databus23/helm-diff
+# https://github.com/jkroepke/helm-secrets/wiki/Installation
+helm plugin install https://github.com/jkroepke/helm-secrets
 
 # https://github.com/99designs/aws-vault
 brew install aws-vault
+# https://aws.amazon.com/ko/cli/
+brew install awscli

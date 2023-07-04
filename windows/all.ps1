@@ -77,3 +77,6 @@ winget install yq
 winget install jqlang.jq
 
 # https://docs.docker.com/desktop/wsl/
+
+# https://helm.sh/
+winget install Helm.Helm
