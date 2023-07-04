@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 set -x
 
-# pyenv
+# https://github.com/pyenv/pyenv
 brew install pyenv
 
 echo '# pyenv

@@ -1,35 +1,49 @@
 #!/usr/bin/env zsh
 set -x
 
-sudo apt install curl
-sudo apt install wget
-sudo apt install tree
-
 # https://www.lesstif.com/lpt/modern-unix-linux-command-line-119963724.html
 
+# https://github.com/tldr-pages/tldr
+brew install tldr
 # https://github.com/ajeetdsouza/zoxide
-curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash
+brew install zoxide
 echo '# zoxide
-export PATH="$HOME/.local/bin:$PATH"
 eval "$(zoxide init zsh)"
 ' >> ~/.zshrc && source ~/.zshrc
-
 # https://github.com/junegunn/fzf
-git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-echo "# fzf" >> ~/.zshrc && ~/.fzf/install && source ~/.zshrc
-
-# https://brew.sh/
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-(echo; echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"') >> ~/.zprofile
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-sudo apt-get install build-essential
-brew install gcc
-brew doctor
-
-# https://github.com/mikefarah/yq#macos--linux-via-homebrew
+brew install fzf
+echo "# fzf\n" >> ~/.zshrc && $(brew --prefix)/opt/fzf/install && source ~/.zshrc
+# https://github.com/sharkdp/bat
+brew install bat
+# https://github.com/ogham/exa
+brew install exa
+# https://github.com/lsd-rs/lsd
+brew install lsd
+# https://github.com/Canop/broot
+brew install broot
+echo "# broot\n" >> ~/.zshrc && broot && source ~/.zshrc
+# https://github.com/sharkdp/fd
+brew install fd
+# https://github.com/ggreer/the_silver_searcher
+brew install ag
+# https://github.com/BurntSushi/ripgrep
+brew install rg
+# https://github.com/chmln/sd
+brew install sd
+# https://github.com/mikefarah/yq
 brew install yq
 # https://jqlang.github.io/jq/download/
 brew install jq
+# https://lnav.org/
+brew install lnav
+# https://github.com/dalance/procs
+brew install procs
+# https://github.com/bootandy/dust
+brew install dust
+# https://github.com/muesli/duf
+brew install duf
+# https://github.com/ClementTsang/bottom
+brew install bottom
 
 # https://kustomize.io/
 brew install kustomize
@@ -38,7 +52,7 @@ brew install kustomize
 brew install helm
 # https://github.com/databus23/helm-diff
 helm plugin install https://github.com/databus23/helm-diff
-# https://github.com/jkroepke/helm-secrets/wiki/Installation
+# https://github.com/jkroepke/helm-secrets
 helm plugin install https://github.com/jkroepke/helm-secrets
 
 # https://github.com/99designs/aws-vault

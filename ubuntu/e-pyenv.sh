@@ -2,7 +2,7 @@
 set -x
 
 # https://github.com/pyenv/pyenv-installer
-curl https://pyenv.run | bash
+brew install pyenv
 
 echo '# pyenv
 export PYENV_ROOT="$HOME/.pyenv"

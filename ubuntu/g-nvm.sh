@@ -2,7 +2,7 @@
 set -x
 
 # https://github.com/nvm-sh/nvm#install--update-script
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+brew install nvm
 
 echo '# nvm
 export NVM_DIR="$HOME/.nvm"

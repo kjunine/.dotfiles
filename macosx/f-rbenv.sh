@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 set -x
 
-# rbenv
+# https://github.com/rbenv/rbenv
 brew install rbenv
 
 echo '# rbenv

@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 set -x
 
-# nvm
+# https://github.com/nvm-sh/nvm
 brew install nvm
 
 echo '# nvm

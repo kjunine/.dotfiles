@@ -61,6 +61,9 @@ notepad $PROFILE
 # https://github.com/cli/cli#installation
 winget install --id GitHub.cli
 
+# https://dandavison.github.io/delta/installation.html
+winget install dandavison.delta
+
 # https://github.com/neovim/neovim/wiki/Installing-Neovim
 winget install Neovim.Neovim
 

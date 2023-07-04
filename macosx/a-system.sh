@@ -11,8 +11,11 @@ echo "Please upload public key to github."
 
 # https://brew.sh/
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
 brew doctor
+
+brew install curl
+brew install wget
+brew install tree
 
 # https://iterm2.com/
 brew install iterm2

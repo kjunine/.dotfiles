@@ -1,8 +1,9 @@
 #!/usr/bin/env zsh
 set -x
 
+brew install vim
 # https://github.com/neovim/neovim/wiki/Installing-Neovim
-sudo apt install neovim
+brew install neovim
 
 # https://spacevim.org/quick-start-guide/
 mkdir ~/.config

@@ -1,8 +1,8 @@
 #!/usr/bin/env zsh
 set -x
 
-# https://github.com/neovim/neovim/wiki/Installing-Neovim
 brew install vim
+# https://github.com/neovim/neovim/wiki/Installing-Neovim
 brew install neovim
 
 # https://spacevim.org/quick-start-guide/
