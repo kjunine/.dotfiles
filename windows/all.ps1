@@ -63,6 +63,7 @@ winget install --id GitHub.cli
 
 # https://dandavison.github.io/delta/installation.html
 winget install dandavison.delta
+winget install jftuga.less
 
 # https://github.com/neovim/neovim/wiki/Installing-Neovim
 winget install Neovim.Neovim
@@ -74,6 +75,10 @@ Invoke-WebRequest -UseBasicParsing -Uri "https://raw.githubusercontent.com/pyenv
 
 # https://github.com/coreybutler/nvm-windows
 
+# https://github.com/ajeetdsouza/zoxide
+winget install zoxide
+# https://github.com/junegunn/fzf
+winget install fzf
 # https://github.com/mikefarah/yq#windows
 winget install yq
 # https://jqlang.github.io/jq/download/
