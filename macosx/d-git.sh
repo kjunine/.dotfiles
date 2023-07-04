@@ -8,6 +8,11 @@ brew install gh
 brew install git-delta
 # https://github.com/jonas/tig
 brew install tig
+# https://github.com/wfxr/forgit
+git clone https://github.com/wfxr/forgit.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/forgit
+# brew install forgit
+# https://github.com/jesseduffield/lazygit
+brew install lazygit
 
 cp .gitconfig ~/.gitconfig
 cp .gitignore_global ~/.gitignore_global
