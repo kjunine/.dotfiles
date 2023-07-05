@@ -45,6 +45,11 @@ brew install duf
 # https://github.com/ClementTsang/bottom
 brew install bottom
 
+# https://docs.docker.com/desktop/install/mac-install/
+
+# https://github.com/ahmetb/kubectx
+brew install kubectx
+
 # https://kustomize.io/
 brew install kustomize
 
@@ -63,6 +68,11 @@ brew install nss
 brew install aws-vault
 # https://aws.amazon.com/ko/cli/
 brew install awscli
+
+# https://cloud.google.com/sdk/docs/install?hl=ko#mac
+brew install google-cloud-sdk
+# https://cloud.google.com/blog/products/containers-kubernetes/kubectl-auth-changes-in-gke
+gcloud components install gke-gcloud-auth-plugin
 
 # https://github.com/caskroom/homebrew-fonts
 brew tap homebrew/cask-fonts

@@ -86,5 +86,12 @@ winget install jqlang.jq
 
 # https://docs.docker.com/desktop/wsl/
 
+# https://github.com/ahmetb/kubectx
+winget install --id ahmetb.kubectx
+winget install --id ahmetb.kubens
+
+# https://kubectl.docs.kubernetes.io/installation/kustomize/
+# choco install kustomize
+
 # https://helm.sh/
 winget install Helm.Helm
