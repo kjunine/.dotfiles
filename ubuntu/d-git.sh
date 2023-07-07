@@ -32,3 +32,5 @@ alias gfp="gf -p"
 alias gcob="gco -b"
 alias gcot="gco -t"
 ' >> ~/.zshrc && source ~/.zshrc
+
+# https://help.gitkraken.com/gitkraken-client/windows-subsystem-for-linux/

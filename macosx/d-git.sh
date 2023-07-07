@@ -23,3 +23,6 @@ alias gfp="gf -p"
 alias gcob="gco -b"
 alias gcot="gco -t"
 ' >> ~/.zshrc && source ~/.zshrc
+
+# https://www.gitkraken.com/
+brew install gitkraken

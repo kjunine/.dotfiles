@@ -61,6 +61,9 @@ notepad $PROFILE
 # https://github.com/cli/cli#installation
 winget install --id GitHub.cli
 
+# https://www.gitkraken.com/
+winget install Axosoft.GitKraken
+
 # https://dandavison.github.io/delta/installation.html
 winget install dandavison.delta
 winget install jftuga.less
