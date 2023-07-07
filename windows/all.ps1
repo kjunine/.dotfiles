@@ -30,19 +30,6 @@ winget install --id Microsoft.PowerShell
 # Set-PSReadLineKeyHandler -Key Tab -Function Complete
 # ```
 
-# https://gitforwindows.org/
-# https://winget.run/pkg/Git/Git
-winget install --id Git.Git
-
-# https://github.com/dahlbyk/posh-git
-# - Install-Module -Name posh-git
-# - notepad $PROFILE
-# ```powershell
-# Set-Alias g git
-# # let's add more aliases
-# Import-Module posh-git
-# ```
-
 # https://ohmyposh.dev/docs/installation/windows
 winget install JanDeDobbeleer.OhMyPosh
 # https://ohmyposh.dev/docs/installation/fonts
@@ -58,18 +45,43 @@ notepad $PROFILE
 # oh-my-posh init pwsh --config "${HOME}\\AppData\\Local\\Programs\\oh-my-posh\\themes\\1_shell.omp.json" | Invoke-Expression
 # ```
 
+# https://gitforwindows.org/
+# https://winget.run/pkg/Git/Git
+winget install --id Git.Git
+
+# https://github.com/dahlbyk/posh-git
+# - Install-Module -Name posh-git
+# - notepad $PROFILE
+# ```powershell
+# Set-Alias g git
+# # let's add more aliases
+# Import-Module posh-git
+# ```
+
+Copy-Item .gitconfig .gitignore_global $HOME
+git config --global core.excludesfile $HOME\.gitignore_global
+
+# https://dandavison.github.io/delta/installation.html
+winget install jftuga.less
+winget install dandavison.delta
+
 # https://github.com/cli/cli#installation
 winget install --id GitHub.cli
+
+# https://github.com/jesseduffield/lazygit
+winget install lazygit
 
 # https://www.gitkraken.com/
 winget install Axosoft.GitKraken
 
-# https://dandavison.github.io/delta/installation.html
-winget install dandavison.delta
-winget install jftuga.less
-
 # https://github.com/neovim/neovim/wiki/Installing-Neovim
 winget install Neovim.Neovim
+
+# - notepad $PROFILE
+# ```powershell
+# Set-Alias vi nvim
+# Set-Alias vim nvim
+# ```
 
 # https://spacevim.org/quick-start-guide/
 
@@ -80,6 +92,10 @@ Invoke-WebRequest -UseBasicParsing -Uri "https://raw.githubusercontent.com/pyenv
 
 # https://github.com/ajeetdsouza/zoxide
 winget install zoxide
+# - notepad $PROFILE
+# ```powershell
+# Invoke-Expression (& { (zoxide init powershell | Out-String) })
+# ```
 # https://github.com/junegunn/fzf
 winget install fzf
 # https://github.com/mikefarah/yq#windows
