@@ -2,7 +2,7 @@
 set -x
 
 # https://github.com/rbenv/rbenv#basic-git-checkout
-brew install rbenv
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 
 echo '# rbenv
 eval "$(~/.rbenv/bin/rbenv init - zsh)"

@@ -3,8 +3,8 @@ set -x
 
 # https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH
 brew install zsh
-echo "/opt/homebrew/bin/zsh" | sudo tee -a /etc/shells
-chsh -s /opt/homebrew/bin/zsh
+echo "/home/linuxbrew/.linuxbrew/bin/zsh" | sudo tee -a /etc/shells
+chsh -s /home/linuxbrew/.linuxbrew/bin/zsh
 
 # https://github.com/ohmyzsh/ohmyzsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"

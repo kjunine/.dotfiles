@@ -12,7 +12,7 @@ eval "$(zoxide init zsh)"
 ' >> ~/.zshrc && source ~/.zshrc
 # https://github.com/junegunn/fzf
 brew install fzf
-echo "# fzf\n" >> ~/.zshrc && $(brew --prefix)/opt/fzf/install && source ~/.zshrc
+echo "# fzf" >> ~/.zshrc && $(brew --prefix)/opt/fzf/install && echo "\n" && source ~/.zshrc
 # https://github.com/sharkdp/bat
 brew install bat
 # https://github.com/ogham/exa
@@ -21,7 +21,7 @@ brew install exa
 brew install lsd
 # https://github.com/Canop/broot
 brew install broot
-echo "# broot\n" >> ~/.zshrc && broot && source ~/.zshrc
+echo "# broot" >> ~/.zshrc && broot && echo "\n" && source ~/.zshrc
 # https://github.com/sharkdp/fd
 brew install fd
 # https://github.com/ggreer/the_silver_searcher
@@ -45,34 +45,9 @@ brew install duf
 # https://github.com/ClementTsang/bottom
 brew install bottom
 
-# https://docs.docker.com/desktop/install/mac-install/
-
-# https://github.com/ahmetb/kubectx
-brew install kubectx
-
-# https://kustomize.io/
-brew install kustomize
-
-# https://helm.sh/
-brew install helm
-# https://github.com/databus23/helm-diff
-helm plugin install https://github.com/databus23/helm-diff
-# https://github.com/jkroepke/helm-secrets
-helm plugin install https://github.com/jkroepke/helm-secrets
-
 # https://github.com/FiloSottile/mkcert
 brew install mkcert
 brew install nss
-
-# https://github.com/99designs/aws-vault
-brew install aws-vault
-# https://aws.amazon.com/ko/cli/
-brew install awscli
-
-# https://cloud.google.com/sdk/docs/install?hl=ko#mac
-brew install google-cloud-sdk
-# https://cloud.google.com/blog/products/containers-kubernetes/kubectl-auth-changes-in-gke
-gcloud components install gke-gcloud-auth-plugin
 
 # https://github.com/caskroom/homebrew-fonts
 brew tap homebrew/cask-fonts
