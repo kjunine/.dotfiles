@@ -23,5 +23,9 @@ brew install awscli
 
 # https://cloud.google.com/sdk/docs/install?hl=ko#mac
 brew install google-cloud-sdk
+echo '# gcloud
+source "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc"
+source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"
+' >> ~/.zshrc && source ~/.zshrc
 # https://cloud.google.com/blog/products/containers-kubernetes/kubectl-auth-changes-in-gke
 gcloud components install gke-gcloud-auth-plugin
