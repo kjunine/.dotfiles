@@ -21,6 +21,7 @@ npm install -g npm
 npm install -g node-gyp
 npm install -g http-server
 npm install -g wait-on
+npm install -g ttab
 
 npm install -g typescript
 npm install -g eslint
