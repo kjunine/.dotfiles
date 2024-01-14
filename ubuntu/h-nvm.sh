@@ -11,20 +11,13 @@ export NVM_DIR="$HOME/.nvm"
 ' >> ~/.zshrc && source ~/.zshrc
 
 mkdir ~/.nvm
-nvm install 18
-nvm alias default 18
+nvm install 20
+nvm alias default 20
 nvm use default
 nvm ls
 
 nvm use default
 npm install -g npm
-npm install -g node-gyp
-npm install -g http-server
+npm install -g pnpm
+npm install -g serve
 npm install -g wait-on
-
-npm install -g typescript
-npm install -g eslint
-npm install -g csslint
-npm install -g sass-lint
-# npm install -g @vue/cli
-# npm install -g @angular/cli
