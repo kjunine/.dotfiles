@@ -17,6 +17,7 @@
 	sh = stash
 [push]
 	default = simple
+	autoSetupRemote = true
 [pull]
 	rebase = false
 [color]
@@ -31,3 +32,5 @@
 	conflictstyle = diff3
 [diff]
 	colorMoved = default
+[init]
+	defaultBranch = main
