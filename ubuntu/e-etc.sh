@@ -15,8 +15,6 @@ brew install fzf
 echo "# fzf" >> ~/.zshrc && $(brew --prefix)/opt/fzf/install && echo "\n" && source ~/.zshrc
 # https://github.com/sharkdp/bat
 brew install bat
-# https://github.com/ogham/exa
-brew install exa
 # https://github.com/lsd-rs/lsd
 brew install lsd
 # https://github.com/Canop/broot

@@ -93,6 +93,10 @@ winget install zoxide
 # ```
 # https://github.com/junegunn/fzf
 winget install fzf
+# https://github.com/sharkdp/bat?tab=readme-ov-file#on-windows
+winget install sharkdp.bat
+# https://github.com/lsd-rs/lsd
+winget install --id lsd-rs.lsd
 # https://github.com/mikefarah/yq#windows
 winget install yq
 # https://jqlang.github.io/jq/download/
