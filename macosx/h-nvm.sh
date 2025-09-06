@@ -11,8 +11,8 @@ export NVM_DIR="$HOME/.nvm"
 ' >> ~/.zshrc && source ~/.zshrc
 
 mkdir ~/.nvm
-nvm install 20
-nvm alias default 20
+nvm install 22
+nvm alias default 22
 nvm use default
 nvm ls
 

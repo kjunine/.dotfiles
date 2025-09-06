@@ -22,7 +22,7 @@ brew install aws-vault
 brew install awscli
 
 # https://cloud.google.com/sdk/docs/install?hl=ko#mac
-brew install google-cloud-sdk
+brew install gcloud-cli
 echo '# gcloud
 source "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc"
 source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"

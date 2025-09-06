@@ -5,10 +5,9 @@ brew install vim
 # https://github.com/neovim/neovim/wiki/Installing-Neovim
 brew install neovim
 
-# https://spacevim.org/quick-start-guide/
+# https://docs.astronvim.com/
 mkdir ~/.config
-curl -sLf https://spacevim.org/install.sh | bash
-# ln -s ~/.SpaceVim ~/.config/nvim
+git clone --depth 1 https://github.com/AstroNvim/template ~/.config/nvim
 
 echo '# vim
 export EDITOR=nvim

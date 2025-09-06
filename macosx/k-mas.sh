@@ -3,17 +3,19 @@ set -x
 
 brew install mas
 
-mas install 918858936     # Airmail
+# mas install 918858936   # Airmail
+mas install 1176895641    # Spark
 mas install 975937182     # Fantastical
 mas install 869223134     # KakaoTalk
+mas install 747648890     # Telegram
 mas install 419330170     # Moom
 mas install 955848755     # Theine
 mas install 413965349     # Soulver
 mas install 1055273043    # PDF Expert
 
-mas install 497799835     # Xcode
-mas install 640199958     # Developer
-mas install 1496833156    # Playgrounds
+# mas install 497799835   # Xcode
+# mas install 640199958   # Developer
+# mas install 1496833156  # Playgrounds
 
 # mas install 682658836   # GarageBand
 # mas install 408981434   # iMovie
@@ -34,7 +36,7 @@ mas install 1496833156    # Playgrounds
 # mas install 1274495053  # Microsoft To Do
 # mas install 1295203466  # Microsoft Remote Desktop
 
-mas install 1289583905    # Pixelmator Pro
+# mas install 1289583905  # Pixelmator Pro
 # mas install 777874532   # Cinemagraph Pro
 
 # mas install 904280696   # Things

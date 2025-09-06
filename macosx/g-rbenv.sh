@@ -8,8 +8,8 @@ echo '# rbenv
 eval "$(rbenv init - zsh)"
 ' >> ~/.zshrc && source ~/.zshrc
 
-rbenv install 3.2.2
-rbenv global 3.2.2
+rbenv install 3.4.1
+rbenv global 3.4.1
 rbenv versions
 
 rbenv exec gem update

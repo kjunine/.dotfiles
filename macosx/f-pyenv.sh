@@ -10,8 +10,8 @@ command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 ' >> ~/.zshrc && source ~/.zshrc
 
-pyenv install 3.11
-pyenv global 3.11
+pyenv install 3.12
+pyenv global 3.12
 pyenv versions
 
 pyenv exec pip install --upgrade pip
