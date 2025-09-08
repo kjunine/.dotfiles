@@ -49,12 +49,16 @@ notepad $PROFILE
 # https://winget.run/pkg/Git/Git
 winget install --id Git.Git
 
+
+# https://github.com/gluons/powershell-git-aliases
+Install-Module git-aliases -Scope CurrentUser -AllowClobber
 # https://github.com/dahlbyk/posh-git
-# - Install-Module -Name posh-git
-# - notepad $PROFILE
+Install-Module posh-git -Scope CurrentUser -Force
+notepad $PROFILE
 # ```powershell
 # Set-Alias g git
 # # let's add more aliases
+# Import-Module git-aliases -DisableNameChecking
 # Import-Module posh-git
 # ```
 
@@ -101,6 +105,18 @@ winget install --id lsd-rs.lsd
 winget install yq
 # https://jqlang.github.io/jq/download/
 winget install jqlang.jq
+
+# ETC
+
+# https://1password.com/downloads/command-line
+# https://developer.1password.com/docs/cli/get-started
+# Step 1: Install 1Password CLI
+winget install 1password-cli
+# Step 2: Turn on the 1Password desktop app integration
+# Step 3: Enter any command to sign in
+op vault list
+
+# DEV
 
 # https://github.com/pyenv-win/pyenv-win/blob/master/docs/installation.md
 Invoke-WebRequest -UseBasicParsing -Uri "https://raw.githubusercontent.com/pyenv-win/pyenv-win/master/pyenv-win/install-pyenv-win.ps1" -OutFile "./install-pyenv-win.ps1"; &"./install-pyenv-win.ps1"
