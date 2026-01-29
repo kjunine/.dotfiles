@@ -134,3 +134,8 @@ winget install --id ahmetb.kubens
 
 # https://helm.sh/
 winget install Helm.Helm
+
+# Claude Code
+New-Item -ItemType Directory -Force -Path "$HOME\.claude" | Out-Null
+Copy-Item ..\claude\settings.windows.json "$HOME\.claude\settings.json"
+Copy-Item ..\claude\statusline.ps1 "$HOME\.claude\statusline.ps1"
