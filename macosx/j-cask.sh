@@ -16,11 +16,11 @@ brew install obsidian
 # brew install firefox
 # brew install snagit
 # brew install screenflow
-# brew install visual-studio-code
-# brew install sourcetree
-# brew install docker
-# brew install unity-hub
+brew install visual-studio-code
+brew install cursor
+brew install docker
 
+# brew install unity-hub
 # brew install android-studio
 # brew install virtualbox
 # brew install teamviewer
