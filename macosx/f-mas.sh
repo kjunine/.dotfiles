@@ -1,17 +1,15 @@
 #!/usr/bin/env zsh
 set -x
 
-brew install mas
-
 # mas install 918858936   # Airmail
-mas install 1176895641    # Spark
-mas install 975937182     # Fantastical
-mas install 869223134     # KakaoTalk
-mas install 747648890     # Telegram
-mas install 419330170     # Moom
-mas install 955848755     # Theine
-mas install 413965349     # Soulver
-mas install 1055273043    # PDF Expert
+# mas install 1176895641    # Spark
+# mas install 975937182     # Fantastical
+# mas install 869223134     # KakaoTalk
+# mas install 747648890     # Telegram
+# mas install 419330170     # Moom
+# mas install 955848755     # Theine
+# mas install 413965349     # Soulver
+# mas install 1055273043    # PDF Expert
 
 # mas install 497799835   # Xcode
 # mas install 640199958   # Developer

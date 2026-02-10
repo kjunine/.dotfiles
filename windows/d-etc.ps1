@@ -1,5 +1,3 @@
-# etc
-
 # https://github.com/neovim/neovim/wiki/Installing-Neovim
 winget install Neovim.Neovim
 
@@ -28,10 +26,4 @@ winget install yq
 # https://jqlang.github.io/jq/download/
 winget install jqlang.jq
 
-# https://1password.com/downloads/command-line
-# https://developer.1password.com/docs/cli/get-started
-# Step 1: Install 1Password CLI
-winget install 1password-cli
-# Step 2: Turn on the 1Password desktop app integration
-# Step 3: Enter any command to sign in
-op vault list
+# need more details

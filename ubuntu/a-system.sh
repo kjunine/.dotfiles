@@ -10,6 +10,9 @@ cat ~/.ssh/id_ed25519.pub
 
 echo "Please upload public key to github."
 
+# Tailscale
+curl -fsSL https://tailscale.com/install.sh | sh
+
 # https://brew.sh/
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 (echo; echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"') >> ~/.zprofile

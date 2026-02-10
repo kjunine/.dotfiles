@@ -26,3 +26,51 @@ curl https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/sch
 open ~/Downloads/Dracula.itermcolors
 
 echo "Please restart shell."
+
+# Ghostty
+brew install ghostty
+
+# Tailscale
+# https://tailscale.com/download/mac
+brew install tailscale
+
+# Termius
+brew install termius
+
+# Alfred
+brew install alfred
+# Bartender
+brew install bartender
+# 1Password
+brew install 1password
+brew install 1password-cli
+# Google Chrome
+brew install google-chrome
+# Google Drive
+brew install google-drive
+# Obsidian
+brew install obsidian
+# Mailbird
+brew install mailbird
+# Telegram
+brew install telegram
+# Discord
+brew install discord
+
+# Mas
+brew install mas
+mas install 975937182     # Fantastical
+mas install 869223134     # KakaoTalk
+mas install 419330170     # Moom
+mas install 955848755     # Theine
+mas install 413965349     # Soulver
+mas install 1055273043    # PDF Expert
+
+# Claude
+brew install claude
+# Gemini
+# - Install page as app
+# ChatGPT
+brew install chatgpt
+# Perplexity
+mas install 714467650

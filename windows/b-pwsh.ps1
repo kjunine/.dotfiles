@@ -1,5 +1,3 @@
-# pwsh
-
 # https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell
 winget install --id Microsoft.PowerShell
 

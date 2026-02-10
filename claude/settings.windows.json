@@ -1,6 +1,0 @@
-{
-  "statusLine": {
-    "type": "command",
-    "command": "pwsh -NoProfile -ExecutionPolicy Bypass -File %USERPROFILE%\\.claude\\statusline.ps1"
-  }
-}

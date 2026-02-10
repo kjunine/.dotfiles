@@ -1,5 +1,3 @@
-# git
-
 # https://gitforwindows.org/
 # https://winget.run/pkg/Git/Git
 winget install --id Git.Git
