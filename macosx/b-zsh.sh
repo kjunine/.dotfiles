@@ -9,13 +9,12 @@ chsh -s /opt/homebrew/bin/zsh
 # https://github.com/ohmyzsh/ohmyzsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-# https://github.com/romkatv/powerlevel10k#installation
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-brew install gnu-sed
-gsed -i'.bak' 's+ZSH_THEME="robbyrussell"+ZSH_THEME="powerlevel10k/powerlevel10k"+g' ~/.zshrc
+# https://starship.rs/
+brew install starship
+echo '# starship
+eval "$(starship init zsh)"
+' >> ~/.zshrc
 
 echo '# etc
 export LANG=en_US.UTF-8
 ' >> ~/.zshrc
-
-echo "Please restart shell."

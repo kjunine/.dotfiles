@@ -1,6 +1,7 @@
 #!/usr/bin/env zsh
 set -x
 
+# ***** WSL ONLY *****
 # https://wslutiliti.es/wslu/install.html#ubuntu
 sudo add-apt-repository ppa:wslutilities/wslu
 sudo apt update
@@ -9,7 +10,9 @@ sudo apt install wslu
 echo '# wslu
 export BROWSER=wslview
 ' >> ~/.zshrc && source ~/.zshrc
+# ***** WSL ONLY *****
 
+# Git
 brew install git
 # https://github.com/cli/cli
 brew install gh

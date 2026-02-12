@@ -16,9 +16,6 @@ pyenv global 3.12
 pyenv versions
 
 pyenv exec pip install --upgrade pip
-pyenv exec pip install pylint
-pyenv exec pip install ipython
-pyenv exec pip install jupyterlab
 
 # https://github.com/nvm-sh/nvm#install--update-script
 brew install nvm
@@ -31,12 +28,11 @@ export NVM_DIR="$HOME/.nvm"
 
 mkdir ~/.nvm
 nvm ls-remote
-nvm install lts
-nvm alias default lts
+nvm install lts/*
+nvm alias default lts/*
 nvm use default
 nvm ls
 
-nvm use default
 npm install -g npm
 corepack enable pnpm
 
@@ -46,6 +42,9 @@ corepack enable pnpm
 
 # Claude Code
 curl -fsSL https://claude.ai/install.sh | bash
+echo '# claude code
+export PATH="$HOME/.local/bin:$PATH"
+' >> ~/.zshrc && source ~/.zshrc
 # Gemini CLI
 npm install -g @google/gemini-cli
 # Codex

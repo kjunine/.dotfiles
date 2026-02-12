@@ -5,10 +5,9 @@ brew install vim
 # https://github.com/neovim/neovim/wiki/Installing-Neovim
 brew install neovim
 
-# https://spacevim.org/quick-start-guide/
-mkdir ~/.config
-curl -sLf https://spacevim.org/install.sh | bash
-# ln -s ~/.SpaceVim ~/.config/nvim
+# https://docs.astronvim.com/
+# mkdir ~/.config
+git clone --depth 1 https://github.com/AstroNvim/template ~/.config/nvim
 
 echo '# vim
 export EDITOR=nvim
@@ -33,6 +32,12 @@ echo "# fzf" >> ~/.zshrc && $(brew --prefix)/opt/fzf/install && echo "\n" && sou
 brew install bat
 # https://github.com/lsd-rs/lsd
 brew install lsd
+echo '# lsd
+unalias ls 2>/dev/null
+ls() {
+  command lsd "$@"
+}
+' >> ~/.zshrc && source ~/.zshrc
 # https://github.com/Canop/broot
 brew install broot
 echo "# broot" >> ~/.zshrc && broot && echo "\n" && source ~/.zshrc

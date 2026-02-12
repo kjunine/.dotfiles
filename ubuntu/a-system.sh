@@ -8,8 +8,6 @@ sudo apt upgrade
 ssh-keygen -t ed25519 -C "d@nielku.com"
 cat ~/.ssh/id_ed25519.pub
 
-echo "Please upload public key to github."
-
 # Tailscale
 curl -fsSL https://tailscale.com/install.sh | sh
 
