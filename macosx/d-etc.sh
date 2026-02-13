@@ -32,6 +32,12 @@ echo "# fzf" >> ~/.zshrc && $(brew --prefix)/opt/fzf/install && echo "\n" && sou
 brew install bat
 # https://github.com/lsd-rs/lsd
 brew install lsd
+echo '# lsd
+unalias ls 2>/dev/null
+ls() {
+  command lsd "$@"
+}
+' >> ~/.zshrc && source ~/.zshrc
 # https://github.com/Canop/broot
 brew install broot
 echo "# broot" >> ~/.zshrc && broot && echo "\n" && source ~/.zshrc
