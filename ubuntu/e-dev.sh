@@ -40,6 +40,11 @@ corepack enable pnpm
 # https://docs.docker.com/desktop/wsl/
 # https://docs.docker.com/engine/install/ubuntu/
 
+# https://github.com/bcicen/ctop
+brew install ctop
+# https://github.com/jesseduffield/lazydocker
+brew install lazydocker
+
 # Claude Code
 curl -fsSL https://claude.ai/install.sh | bash
 echo '# claude code
