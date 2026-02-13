@@ -28,8 +28,8 @@ export NVM_DIR="$HOME/.nvm"
 
 mkdir ~/.nvm
 nvm ls-remote
-nvm install lts
-nvm alias default lts
+nvm install lts/*
+nvm alias default lts/*
 nvm use default
 nvm ls
 
