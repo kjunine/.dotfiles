@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
-set -x
+set -ex
+DOTFILES_DIR="$(cd "$(dirname "$0")/.." && pwd)"
+source "${DOTFILES_DIR}/common/helpers.sh"
 
 sudo apt update
 sudo apt upgrade
@@ -9,16 +11,16 @@ ssh-keygen -t ed25519 -C "d@nielku.com"
 cat ~/.ssh/id_ed25519.pub
 
 # Tailscale
-curl -fsSL https://tailscale.com/install.sh | sh
+is_installed tailscale || curl -fsSL https://tailscale.com/install.sh | sh
 
 # https://brew.sh/
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-(echo; echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"') >> ~/.zprofile
+append_if_missing 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' ~/.zprofile
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 sudo apt-get install build-essential
-brew install gcc
+is_installed gcc || brew install gcc
 brew doctor
 
-brew install curl
-brew install wget
-brew install tree
+is_installed curl || brew install curl
+is_installed wget || brew install wget
+is_installed tree || brew install tree

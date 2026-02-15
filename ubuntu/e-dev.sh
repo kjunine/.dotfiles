@@ -1,14 +1,15 @@
 #!/usr/bin/env zsh
-set -x
+set -ex
+DOTFILES_DIR="$(cd "$(dirname "$0")/.." && pwd)"
+source "${DOTFILES_DIR}/common/helpers.sh"
 
 # https://github.com/pyenv/pyenv-installer
-brew install pyenv
+is_installed pyenv || brew install pyenv
 
-echo '# pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-' >> ~/.zshrc && source ~/.zshrc
+append_if_missing '# pyenv' ~/.zshrc
+append_if_missing 'export PYENV_ROOT="$HOME/.pyenv"' ~/.zshrc
+append_if_missing 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' ~/.zshrc
+append_if_missing 'eval "$(pyenv init -)"' ~/.zshrc
 
 pyenv install --list | grep '^ *3\.'
 pyenv install 3.12
@@ -18,15 +19,14 @@ pyenv versions
 pyenv exec pip install --upgrade pip
 
 # https://github.com/nvm-sh/nvm#install--update-script
-brew install nvm
+is_installed nvm || brew install nvm
 
-echo '# nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && \. "$(brew --prefix)/opt/nvm/nvm.sh"
-[ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm"
-' >> ~/.zshrc && source ~/.zshrc
+append_if_missing '# nvm' ~/.zshrc
+append_if_missing 'export NVM_DIR="$HOME/.nvm"' ~/.zshrc
+append_if_missing '[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && \. "$(brew --prefix)/opt/nvm/nvm.sh"' ~/.zshrc
+append_if_missing '[ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm"' ~/.zshrc
 
-mkdir ~/.nvm
+mkdir -p ~/.nvm
 nvm ls-remote
 nvm install lts/*
 nvm alias default lts/*
@@ -41,16 +41,15 @@ corepack enable pnpm
 # https://docs.docker.com/engine/install/ubuntu/
 
 # https://github.com/bcicen/ctop
-brew install ctop
+is_installed ctop || brew install ctop
 # https://github.com/jesseduffield/lazydocker
-brew install lazydocker
+is_installed lazydocker || brew install lazydocker
 
 # Claude Code
-curl -fsSL https://claude.ai/install.sh | bash
-echo '# claude code
-export PATH="$HOME/.local/bin:$PATH"
-' >> ~/.zshrc && source ~/.zshrc
+is_installed claude-code || curl -fsSL https://claude.ai/install.sh | bash
+append_if_missing '# claude code' ~/.zshrc
+append_if_missing 'export PATH="$HOME/.local/bin:$PATH"' ~/.zshrc
 # Gemini CLI
-npm install -g @google/gemini-cli
+npm list -g @google/gemini-cli >/dev/null 2>&1 || npm install -g @google/gemini-cli
 # Codex
-npm i -g @openai/codex
+npm list -g @openai/codex >/dev/null 2>&1 || npm i -g @openai/codex
