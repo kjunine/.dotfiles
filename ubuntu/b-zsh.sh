@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -x
 
+# Zsh
 # https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH
 brew install zsh
 echo "/home/linuxbrew/.linuxbrew/bin/zsh" | sudo tee -a /etc/shells

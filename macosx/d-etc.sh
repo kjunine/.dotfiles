@@ -1,6 +1,7 @@
 #!/usr/bin/env zsh
 set -x
 
+# Vim
 brew install vim
 # https://github.com/neovim/neovim/wiki/Installing-Neovim
 brew install neovim
@@ -15,6 +16,12 @@ alias vim="nvim"
 alias vi="nvim"
 alias vimdiff="nvim -d"
 ' >> ~/.zshrc && source ~/.zshrc
+
+# Tmux
+brew install tmux
+
+# https://github.com/sxyazi/yazi
+brew install yazi
 
 # https://www.lesstif.com/lpt/modern-unix-linux-command-line-119963724.html
 

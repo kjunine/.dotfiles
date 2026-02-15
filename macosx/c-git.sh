@@ -1,6 +1,7 @@
 #!/usr/bin/env zsh
 set -x
 
+# Git
 brew install git
 # https://github.com/cli/cli
 brew install gh
