@@ -18,9 +18,9 @@ is_installed tailscale || curl -fsSL https://tailscale.com/install.sh | sh
 append_if_missing 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' ~/.zprofile
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 sudo apt-get install build-essential
-is_installed gcc || brew install gcc
+brew_install gcc
 brew doctor
 
-is_installed curl || brew install curl
-is_installed wget || brew install wget
-is_installed tree || brew install tree
+brew_install curl
+brew_install wget
+brew_install tree
