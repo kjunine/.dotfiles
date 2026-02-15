@@ -1,9 +1,14 @@
 #!/bin/sh
 # helpers.sh - 공통 헬퍼 함수 (POSIX sh 호환)
 
-# 도구 설치 여부 확인
+# 도구 설치 여부 확인 (PATH 기준)
 is_installed() {
   command -v "$1" >/dev/null 2>&1
+}
+
+# brew로 설치 안 된 경우만 brew install 실행
+brew_install() {
+  brew list "$1" >/dev/null 2>&1 || brew install "$1"
 }
 
 # 단일 줄을 파일에 중복 없이 추가
