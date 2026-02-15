@@ -4,7 +4,7 @@ DOTFILES_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 source "${DOTFILES_DIR}/common/helpers.sh"
 
 # https://github.com/pyenv/pyenv-installer
-is_installed pyenv || brew install pyenv
+brew_install pyenv
 
 append_if_missing '# pyenv' ~/.zshrc
 append_if_missing 'export PYENV_ROOT="$HOME/.pyenv"' ~/.zshrc
@@ -19,7 +19,7 @@ pyenv versions
 pyenv exec pip install --upgrade pip
 
 # https://github.com/nvm-sh/nvm#install--update-script
-is_installed nvm || brew install nvm
+brew_install nvm
 
 append_if_missing '# nvm' ~/.zshrc
 append_if_missing 'export NVM_DIR="$HOME/.nvm"' ~/.zshrc
@@ -41,9 +41,9 @@ corepack enable pnpm
 # https://docs.docker.com/engine/install/ubuntu/
 
 # https://github.com/bcicen/ctop
-is_installed ctop || brew install ctop
+brew_install ctop
 # https://github.com/jesseduffield/lazydocker
-is_installed lazydocker || brew install lazydocker
+brew_install lazydocker
 
 # Claude Code
 is_installed claude-code || curl -fsSL https://claude.ai/install.sh | bash

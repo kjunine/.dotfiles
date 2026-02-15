@@ -16,18 +16,18 @@ fi
 # ***** WSL ONLY *****
 
 # Git
-is_installed git || brew install git
+brew_install git
 # https://github.com/cli/cli
-is_installed gh || brew install gh
+brew_install gh
 # https://github.com/dandavison/delta
-is_installed delta || brew install git-delta
+brew_install git-delta
 # https://github.com/jonas/tig
-is_installed tig || brew install tig
+brew_install tig
 # https://github.com/wfxr/forgit
 [ -d ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/forgit ] || git clone https://github.com/wfxr/forgit.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/forgit
 # brew install forgit
 # https://github.com/jesseduffield/lazygit
-is_installed lazygit || brew install lazygit
+brew_install lazygit
 
 cp "${DOTFILES_DIR}/common/.gitconfig" ~/.gitconfig
 cp "${DOTFILES_DIR}/common/.gitignore_global" ~/.gitignore_global
