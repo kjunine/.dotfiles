@@ -5,7 +5,7 @@ source "${DOTFILES_DIR}/common/helpers.sh"
 
 # Zsh
 # https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH
-is_installed zsh || brew install zsh
+brew_install zsh
 grep -qF "/opt/homebrew/bin/zsh" /etc/shells || echo "/opt/homebrew/bin/zsh" | sudo tee -a /etc/shells
 chsh -s /opt/homebrew/bin/zsh
 
@@ -13,7 +13,7 @@ chsh -s /opt/homebrew/bin/zsh
 [ -d ~/.oh-my-zsh ] || sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # https://starship.rs/
-is_installed starship || brew install starship
+brew_install starship
 append_if_missing '# starship' ~/.zshrc
 append_if_missing 'eval "$(starship init zsh)"' ~/.zshrc
 

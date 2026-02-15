@@ -4,18 +4,18 @@ DOTFILES_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 source "${DOTFILES_DIR}/common/helpers.sh"
 
 # Git
-is_installed git || brew install git
+brew_install git
 # https://github.com/cli/cli
-is_installed gh || brew install gh
+brew_install gh
 # https://github.com/dandavison/delta
-is_installed delta || brew install git-delta
+brew_install git-delta
 # https://github.com/jonas/tig
-is_installed tig || brew install tig
+brew_install tig
 # https://github.com/wfxr/forgit
 [ -d ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/forgit ] || git clone https://github.com/wfxr/forgit.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/forgit
-is_installed forgit || brew install forgit
+brew_install forgit
 # https://github.com/jesseduffield/lazygit
-is_installed lazygit || brew install lazygit
+brew_install lazygit
 # https://github.com/djui/alias-tips
 [ -d ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/alias-tips ] || git clone https://github.com/djui/alias-tips.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/alias-tips
 
@@ -29,8 +29,8 @@ append_if_missing 'alias gcob="gco -b"' ~/.zshrc
 append_if_missing 'alias gcot="gco -t"' ~/.zshrc
 
 # https://www.gitkraken.com/
-is_installed gitkraken || brew install gitkraken
-is_installed gk || brew install gitkraken-cli
+brew_install gitkraken
+brew_install gitkraken-cli
 
 # github
 git remote set-url origin git@github.com:kjunine/.dotfiles.git

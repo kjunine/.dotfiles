@@ -4,7 +4,7 @@ DOTFILES_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 source "${DOTFILES_DIR}/common/helpers.sh"
 
 # https://github.com/pyenv/pyenv
-is_installed pyenv || brew install pyenv
+brew_install pyenv
 
 append_if_missing '# pyenv' ~/.zshrc
 append_if_missing 'export PYENV_ROOT="$HOME/.pyenv"' ~/.zshrc
@@ -19,7 +19,7 @@ pyenv versions
 pyenv exec pip install --upgrade pip
 
 # https://github.com/nvm-sh/nvm
-is_installed nvm || brew install nvm
+brew_install nvm
 
 append_if_missing '# nvm' ~/.zshrc
 append_if_missing 'export NVM_DIR="$HOME/.nvm"' ~/.zshrc
@@ -51,11 +51,11 @@ npm list -g @google/gemini-cli >/dev/null 2>&1 || npm install -g @google/gemini-
 npm list -g @openai/codex >/dev/null 2>&1 || npm i -g @openai/codex
 
 # Visual Studio Code
-is_installed code || brew install visual-studio-code
+brew_install visual-studio-code
 # Cursor
-is_installed cursor || brew install cursor
+brew_install cursor
 # Antigravity
-is_installed antigravity || brew install antigravity
+brew_install antigravity
 
 # Warp
-is_installed warp || brew install warp
+brew_install warp
