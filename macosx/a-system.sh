@@ -13,12 +13,12 @@ cat ~/.ssh/id_ed25519.pub
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew doctor
 
-is_installed curl || brew install curl
-is_installed wget || brew install wget
-is_installed tree || brew install tree
+brew_install curl
+brew_install wget
+brew_install tree
 
 # https://iterm2.com/
-is_installed iterm2 || brew install iterm2
+brew_install iterm2
 
 curl https://github.com/sindresorhus/iterm2-snazzy/raw/main/Snazzy.itermcolors -o ~/Downloads/Snazzy.itermcolors
 open ~/Downloads/Snazzy.itermcolors
@@ -26,37 +26,37 @@ curl https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/sch
 open ~/Downloads/Dracula.itermcolors
 
 # Ghostty
-is_installed ghostty || brew install ghostty
+brew_install ghostty
 
 # Tailscale
 # https://tailscale.com/download/mac
-is_installed tailscale || brew install tailscale
+brew_install tailscale
 
 # Termius
-is_installed termius || brew install termius
+brew_install termius
 
 # Alfred
-is_installed alfred || brew install alfred
+brew_install alfred
 # Bartender
-is_installed bartender || brew install bartender
+brew_install bartender
 # 1Password
-is_installed 1password || brew install 1password
-is_installed op || brew install 1password-cli
+brew_install 1password
+brew_install 1password-cli
 # Google Chrome
-is_installed google-chrome || brew install google-chrome
+brew_install google-chrome
 # Google Drive
-is_installed google-drive || brew install google-drive
+brew_install google-drive
 # Obsidian
-is_installed obsidian || brew install obsidian
+brew_install obsidian
 # Mailbird
-is_installed mailbird || brew install mailbird
+brew_install mailbird
 # Telegram
-is_installed telegram || brew install telegram
+brew_install telegram
 # Discord
-is_installed discord || brew install discord
+brew_install discord
 
 # Mas
-is_installed mas || brew install mas
+brew_install mas
 mas install 975937182     # Fantastical
 mas install 869223134     # KakaoTalk
 mas install 419330170     # Moom
@@ -65,10 +65,10 @@ mas install 413965349     # Soulver
 mas install 1055273043    # PDF Expert
 
 # Claude
-is_installed claude || brew install claude
+brew_install claude
 # Gemini
 # - Install page as app
 # ChatGPT
-is_installed chatgpt || brew install chatgpt
+brew_install chatgpt
 # Perplexity
 mas install 714467650
