@@ -19,9 +19,12 @@ alias vimdiff="nvim -d"
 
 # Tmux
 brew install tmux
+cp .tmux.conf ~/.tmux.conf
 
 # https://github.com/sxyazi/yazi
 brew install yazi
+mkdir -p ~/.config/yazi
+cp yazi/*.toml ~/.config/yazi/
 
 # https://www.lesstif.com/lpt/modern-unix-linux-command-line-119963724.html
 

@@ -1,0 +1,80 @@
+# ============================================
+# Catppuccin Mocha 테마 (tmux 테마와 통일)
+# ============================================
+
+[mgr]
+cwd = { fg = "#89b4fa", bold = true }
+
+hovered = { bg = "#45475a", bold = true }
+preview_hovered = { bg = "#313244" }
+
+find_keyword = { fg = "#f9e2af", bold = true, italic = true, underline = true }
+find_position = { fg = "#f5c2e7", italic = true }
+
+marker_selected = { fg = "#a6e3a1", bg = "#a6e3a1" }
+marker_copied = { fg = "#f9e2af", bg = "#f9e2af" }
+marker_cut = { fg = "#f38ba8", bg = "#f38ba8" }
+
+[tabs]
+active = { fg = "#1e1e2e", bg = "#89b4fa", bold = true }
+inactive = { fg = "#cdd6f4", bg = "#45475a" }
+
+[mode]
+normal = { fg = "#1e1e2e", bg = "#89b4fa", bold = true }
+select = { fg = "#1e1e2e", bg = "#a6e3a1", bold = true }
+unset = { fg = "#1e1e2e", bg = "#f2cdcd", bold = true }
+
+[status]
+separator_open = ""
+separator_close = ""
+separator_style = { fg = "#45475a", bg = "#1e1e2e" }
+
+progress_label = { fg = "#cdd6f4", bold = true }
+progress_normal = { fg = "#45475a" }
+progress_error = { fg = "#f38ba8" }
+
+permissions_t = { fg = "#89b4fa" }
+permissions_r = { fg = "#f9e2af" }
+permissions_w = { fg = "#f38ba8" }
+permissions_x = { fg = "#a6e3a1" }
+permissions_s = { fg = "#6c7086" }
+
+[filetype]
+rules = [
+  { name = "*/", fg = "#89b4fa", bold = true },
+
+  { mime = "image/*", fg = "#f5c2e7" },
+  { mime = "video/*", fg = "#f9e2af" },
+  { mime = "audio/*", fg = "#f9e2af" },
+
+  { mime = "application/zip", fg = "#f38ba8" },
+  { mime = "application/gzip", fg = "#f38ba8" },
+  { mime = "application/x-tar", fg = "#f38ba8" },
+  { mime = "application/x-bzip2", fg = "#f38ba8" },
+  { mime = "application/x-7z-compressed", fg = "#f38ba8" },
+  { mime = "application/x-rar", fg = "#f38ba8" },
+
+  { mime = "application/pdf", fg = "#fab387" },
+  { mime = "application/json", fg = "#a6e3a1" },
+
+  { name = "*.md", fg = "#cba6f7" },
+  { name = "*.rs", fg = "#fab387" },
+  { name = "*.go", fg = "#89dceb" },
+  { name = "*.py", fg = "#f9e2af" },
+  { name = "*.js", fg = "#f9e2af" },
+  { name = "*.ts", fg = "#89b4fa" },
+  { name = "*.tsx", fg = "#89b4fa" },
+  { name = "*.jsx", fg = "#f9e2af" },
+  { name = "*.css", fg = "#89b4fa" },
+  { name = "*.html", fg = "#fab387" },
+  { name = "*.sh", fg = "#a6e3a1" },
+  { name = "*.toml", fg = "#f5c2e7" },
+  { name = "*.yaml", fg = "#f5c2e7" },
+  { name = "*.yml", fg = "#f5c2e7" },
+  { name = "*.lock", fg = "#6c7086" },
+
+  { name = ".gitignore", fg = "#6c7086" },
+  { name = ".env*", fg = "#f38ba8" },
+  { name = "Makefile", fg = "#a6e3a1" },
+  { name = "Dockerfile*", fg = "#89dceb" },
+]

@@ -1,0 +1,13 @@
+# ============================================
+# yazi 키맵 설정
+# ============================================
+
+[[mgr.prepend_keymap]]
+on = "<C-h>"
+run = "hidden toggle"
+desc = "숨김 파일 토글"
+
+[[mgr.prepend_keymap]]
+on = "<C-n>"
+run = "create --dir"
+desc = "새 디렉토리 생성"

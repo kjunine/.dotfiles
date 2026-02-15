@@ -1,0 +1,55 @@
+# ============================================
+# yazi 기본 설정
+# ============================================
+
+[mgr]
+ratio = [1, 2, 5]
+sort_by = "natural"
+sort_sensitive = false
+sort_reverse = false
+sort_dir_first = true
+linemode = "size"
+show_hidden = true
+show_symlink = true
+
+[preview]
+max_width = 1000
+max_height = 1000
+cache_dir = ""
+image_delay = 100
+
+[opener]
+edit = [
+  { run = '${EDITOR:-vim} "$@"', block = true, for = "unix" },
+]
+open = [
+  { run = 'xdg-open "$@"', desc = "Open", for = "linux" },
+]
+
+[open]
+rules = [
+  { mime = "text/*", use = "edit" },
+  { mime = "application/json", use = "edit" },
+  { mime = "application/x-yaml", use = "edit" },
+  { mime = "application/toml", use = "edit" },
+  { mime = "application/xml", use = "edit" },
+  { mime = "application/javascript", use = "edit" },
+  { mime = "application/typescript", use = "edit" },
+  { mime = "inode/x-empty", use = "edit" },
+
+  { mime = "image/*", use = "open" },
+  { mime = "video/*", use = "open" },
+  { mime = "audio/*", use = "open" },
+  { mime = "application/pdf", use = "open" },
+
+  { name = "*.md", use = "edit" },
+  { name = "*.sh", use = "edit" },
+  { name = "*.env*", use = "edit" },
+  { name = "Makefile", use = "edit" },
+  { name = "Dockerfile*", use = "edit" },
+  { name = "*.conf", use = "edit" },
+  { name = "*.cfg", use = "edit" },
+  { name = "*.ini", use = "edit" },
+
+  { mime = "*", use = "open" },
+]
