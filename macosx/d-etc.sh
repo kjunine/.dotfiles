@@ -42,6 +42,9 @@ append_if_missing 'eval "$(zoxide init zsh)"' ~/.zshrc
 brew_install fzf
 append_if_missing '# fzf' ~/.zshrc
 $(brew --prefix)/opt/fzf/install
+append_block_if_missing "rfzf" 'rfzf() {
+  rg --line-number --no-heading "${1:-.}" | fzf --preview '\''bat --color=always {1} --highlight-line {2}'\'' --delimiter ":"
+}' ~/.zshrc
 # https://github.com/sharkdp/bat
 brew_install bat
 # https://github.com/lsd-rs/lsd
