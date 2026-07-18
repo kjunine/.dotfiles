@@ -9,6 +9,14 @@ winget install Neovim.Neovim
 
 # https://spacevim.org/quick-start-guide/
 
+# https://github.com/marlocarlo/psmux (Windows용 tmux)
+winget install --id marlocarlo.psmux
+# tmux 설정 + TPM (플러그인 매니저)
+Copy-Item .tmux.conf $HOME
+if (-not (Test-Path "$HOME\.tmux\plugins\tpm")) {
+  git clone https://github.com/tmux-plugins/tpm "$HOME\.tmux\plugins\tpm"
+}
+
 # https://github.com/ajeetdsouza/zoxide
 winget install zoxide
 # - notepad $PROFILE
