@@ -16,9 +16,9 @@
 | 단계 | 파일명 | 역할 |
 |------|--------|------|
 | a | `a-system.sh/.ps1` | SSH 키, 패키지 매니저(Homebrew/winget), 기본 앱 설치 |
-| b | `b-zsh.sh/.ps1` | 셸 설정 (Oh My Zsh, Starship prompt) |
+| b | `b-zsh.sh` / `b-pwsh.ps1` | 셸 설정 (Oh My Zsh, Starship prompt / Windows는 PowerShell 7) |
 | c | `c-git.sh/.ps1` | Git 도구 (gh, delta, tig, lazygit, forgit) + `.gitconfig` 복사 |
-| d | `d-etc.sh` | CLI 도구 (neovim/AstroNvim, tmux, yazi, herdr 설정, fzf, zoxide, bat, lsd, ripgrep 등) |
+| d | `d-etc.sh/.ps1` | CLI 도구 (neovim/AstroNvim, tmux, yazi, herdr 설정, fzf, zoxide, bat, lsd, ripgrep 등) |
 | e | `e-dev.sh/.ps1` | 개발 런타임 (pyenv/Python, nvm/Node.js, Docker, Claude Code, Gemini CLI, Codex) |
 
 ## 사용법
@@ -51,11 +51,16 @@ cd ubuntu
 PowerShell에서 실행:
 
 ```powershell
+cd windows
 .\a-system.ps1
-.\b-zsh.ps1
+.\b-pwsh.ps1
 .\c-git.ps1
+.\d-etc.ps1
 .\e-dev.ps1
 ```
+
+- Windows는 `common/` 대신 `windows/`의 전용 `.gitconfig`, `.gitignore_global`, `.tmux.conf`(psmux용, `clip.exe` 클립보드)를 사용
+- herdr 설정은 `common/herdr/config.toml`을 `%APPDATA%\herdr\config.toml`로 복사하고, 기본 쉘을 `pwsh.exe`로 지정 (`[terminal] default_shell`)
 
 ## 공통 설정 파일
 
