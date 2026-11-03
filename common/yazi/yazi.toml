@@ -24,6 +24,7 @@ edit = [
 ]
 open = [
   { run = 'xdg-open "$@"', desc = "Open", for = "linux" },
+  { run = 'open "$@"', desc = "Open", for = "macos" },
 ]
 
 [open]
@@ -42,14 +43,14 @@ rules = [
   { mime = "audio/*", use = "open" },
   { mime = "application/pdf", use = "open" },
 
-  { name = "*.md", use = "edit" },
-  { name = "*.sh", use = "edit" },
-  { name = "*.env*", use = "edit" },
-  { name = "Makefile", use = "edit" },
-  { name = "Dockerfile*", use = "edit" },
-  { name = "*.conf", use = "edit" },
-  { name = "*.cfg", use = "edit" },
-  { name = "*.ini", use = "edit" },
+  { url = "*.md", use = "edit" },
+  { url = "*.sh", use = "edit" },
+  { url = "*.env*", use = "edit" },
+  { url = "Makefile", use = "edit" },
+  { url = "Dockerfile*", use = "edit" },
+  { url = "*.conf", use = "edit" },
+  { url = "*.cfg", use = "edit" },
+  { url = "*.ini", use = "edit" },
 
   { mime = "*", use = "open" },
 ]
