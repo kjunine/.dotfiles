@@ -30,6 +30,10 @@ brew_install yazi
 mkdir -p ~/.config/yazi
 cp "${DOTFILES_DIR}/common/yazi/"*.toml ~/.config/yazi/
 
+# https://herdr.dev/ (tmux 스타일 키바인딩, prefix Ctrl+a)
+mkdir -p ~/.config/herdr
+cp "${DOTFILES_DIR}/common/herdr/config.toml" ~/.config/herdr/config.toml
+
 # https://www.lesstif.com/lpt/modern-unix-linux-command-line-119963724.html
 
 # https://github.com/tldr-pages/tldr

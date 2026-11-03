@@ -1,0 +1,69 @@
+onboarding = false
+
+[ui.toast]
+delivery = "herdr"
+
+# ============================================
+# 키바인딩: ~/.tmux.conf 스타일에 맞춤
+# (herdr 기본 키는 가능한 한 함께 유지)
+# ============================================
+[keys]
+# --- Prefix: Ctrl+a (tmux와 동일, Ctrl+a 두 번 = 셸에 Ctrl+a 전달) ---
+prefix = "ctrl+a"
+
+# --- 분할: | 세로(좌우), - 가로(상하) ---
+split_vertical = ["prefix+|", "prefix+backslash"]
+split_horizontal = "prefix+minus"
+
+# --- 패널 이동: prefix+hjkl, Alt+hjkl (prefix 없이) ---
+focus_pane_left = ["prefix+h", "alt+h"]
+focus_pane_down = ["prefix+j", "alt+j"]
+focus_pane_up = ["prefix+k", "alt+k"]
+focus_pane_right = ["prefix+l", "alt+l"]
+last_pane = "prefix+;"
+
+# --- 리사이즈: prefix+H/J/K/L (tmux), 리사이즈 모드는 prefix+R ---
+resize_pane_left = "prefix+shift+h"
+resize_pane_down = "prefix+shift+j"
+resize_pane_up = "prefix+shift+k"
+resize_pane_right = "prefix+shift+l"
+resize_mode = "prefix+shift+r"
+
+# --- 패널 교체: H/J/K/L을 리사이즈에 양보하고 Alt로 이동 ---
+swap_pane_left = "prefix+alt+h"
+swap_pane_down = "prefix+alt+j"
+swap_pane_up = "prefix+alt+k"
+swap_pane_right = "prefix+alt+l"
+
+# --- 탭(= tmux window): Shift+←/→ 이동, < > 순서 변경 ---
+new_tab = "prefix+c"
+previous_tab = ["prefix+p", "shift+left"]
+next_tab = ["prefix+n", "shift+right"]
+move_tab_previous = "prefix+<"
+move_tab_next = "prefix+>"
+rename_tab = ["prefix+comma", "prefix+shift+t"]
+close_tab = "prefix+&"
+
+# --- 복사 모드: prefix+v (tmux), prefix+[ 유지 ---
+copy_mode = ["prefix+v", "prefix+["]
+
+# --- 설정 리로드: prefix+r ---
+reload_config = "prefix+r"
+
+# --- 패널/워크스페이스(= tmux session) 관리 ---
+close_pane = ["prefix+x", "prefix+shift+x"]
+new_workspace = ["prefix+shift+s", "prefix+shift+n"]
+rename_workspace = ["prefix+$", "prefix+shift+w"]
+close_workspace = ["prefix+shift+q", "prefix+shift+d"]
+
+# --- Detach: prefix+d (tmux) ---
+detach = "prefix+d"
+
+# --- yazi 팝업: prefix+f ---
+[[keys.command]]
+key = "prefix+f"
+type = "popup"
+command = "yazi"
+description = "yazi 파일 관리자"
+width = "80%"
+height = "80%"
