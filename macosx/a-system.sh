@@ -6,12 +6,12 @@ source "${DOTFILES_DIR}/common/helpers.sh"
 xcode-select -p &>/dev/null || xcode-select --install
 
 # https://github.com/settings/keys
-ssh-keygen -t ed25519 -C "d@nielku.com"
+[ -f ~/.ssh/id_ed25519 ] || ssh-keygen -t ed25519 -C "d@nielku.com"
 cat ~/.ssh/id_ed25519.pub
 
 # https://brew.sh/
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-brew doctor
+command -v brew &>/dev/null || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew doctor || true
 
 brew_install curl
 brew_install wget
@@ -20,7 +20,7 @@ brew_install tree
 # https://iterm2.com/
 brew_install iterm2
 
-curl https://github.com/sindresorhus/iterm2-snazzy/raw/main/Snazzy.itermcolors -o ~/Downloads/Snazzy.itermcolors
+curl -L https://github.com/sindresorhus/iterm2-snazzy/raw/main/Snazzy.itermcolors -o ~/Downloads/Snazzy.itermcolors
 open ~/Downloads/Snazzy.itermcolors
 curl https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Dracula.itermcolors -o ~/Downloads/Dracula.itermcolors
 open ~/Downloads/Dracula.itermcolors
