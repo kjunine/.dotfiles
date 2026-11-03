@@ -7,7 +7,7 @@
 - `macosx/` - macOS 전용 셋업 스크립트
 - `ubuntu/` - Ubuntu/WSL 전용 셋업 스크립트
 - `windows/` - Windows 전용 셋업 스크립트
-- `common/` - 플랫폼 공통 설정 파일 (.gitconfig, .tmux.conf, yazi, herdr, helpers.sh)
+- `common/` - 플랫폼 공통 설정 파일 (.gitconfig, .tmux.conf, yazi, herdr, ghostty, helpers.sh)
 
 ## 스크립트 실행 순서
 
@@ -66,4 +66,5 @@ PowerShell에서 실행:
 - `.tmux.conf` - tmux 설정 (Catppuccin Mocha 테마, TPM 플러그인)
 - `yazi/` - yazi 파일 매니저 설정
 - `herdr/config.toml` - herdr 설정 (tmux 스타일 키바인딩, prefix `Ctrl+a`)
+- `ghostty/` - Ghostty 터미널 설정 (라이트/다크 모드 자동 테마 전환)
 - `helpers.sh` - 스크립트 공통 헬퍼 함수 (멱등성 보장)

@@ -26,7 +26,10 @@ curl https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/sch
 open ~/Downloads/Dracula.itermcolors
 
 # Ghostty
+# https://ghostty.org/docs/config/reference
 brew_install ghostty
+mkdir -p ~/.config/ghostty
+cp "${DOTFILES_DIR}/common/ghostty/config" ~/.config/ghostty/config
 
 # Tailscale
 # https://tailscale.com/download/mac
