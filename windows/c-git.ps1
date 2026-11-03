@@ -14,7 +14,7 @@ notepad $PROFILE
 # Import-Module posh-git
 # ```
 
-Copy-Item .gitconfig .gitignore_global $HOME
+Copy-Item "$PSScriptRoot\.gitconfig", "$PSScriptRoot\.gitignore_global" $HOME
 git config --global core.excludesfile $HOME\.gitignore_global
 
 # https://dandavison.github.io/delta/installation.html
