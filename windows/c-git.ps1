@@ -14,6 +14,19 @@ notepad $PROFILE
 # Import-Module posh-git
 # ```
 
+# Git Bash (Claude Code `!` 명령 등)용 git 단축 함수
+$bashrc = "$HOME\.bashrc"
+if (-not (Test-Path $bashrc)) { New-Item -ItemType File $bashrc | Out-Null }
+@(
+    '# git',
+    'gfp() { git fetch -p "$@"; }',
+    'gl() { git pull "$@"; }',
+    'gp() { git push "$@"; }',
+    'gst() { git status "$@"; }'
+) | ForEach-Object {
+    if (-not (Select-String -Path $bashrc -SimpleMatch $_ -Quiet)) { Add-Content $bashrc $_ }
+}
+
 Copy-Item "$PSScriptRoot\.gitconfig", "$PSScriptRoot\.gitignore_global" $HOME
 git config --global core.excludesfile $HOME\.gitignore_global
 
