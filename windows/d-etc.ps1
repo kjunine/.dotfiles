@@ -23,6 +23,14 @@ New-Item -ItemType Directory -Force "$env:APPDATA\herdr" | Out-Null
 Copy-Item "$PSScriptRoot\..\common\herdr\config.toml" "$env:APPDATA\herdr\config.toml"
 Add-Content "$env:APPDATA\herdr\config.toml" "`n[terminal]`ndefault_shell = `"pwsh.exe`""
 
+# https://github.com/sxyazi/yazi
+# Windows 설정 경로는 %APPDATA%\yazi\config
+winget install sxyazi.yazi
+New-Item -ItemType Directory -Force "$env:APPDATA\yazi\config" | Out-Null
+Copy-Item "$PSScriptRoot\..\common\yazi\*.toml" "$env:APPDATA\yazi\config\"
+# yazi는 mime 판별에 `file` 명령을 쓰는데 Windows엔 없으므로 Git 동봉 file.exe를 지정
+[Environment]::SetEnvironmentVariable("YAZI_FILE_ONE", "$env:ProgramFiles\Git\usr\bin\file.exe", "User")
+
 # https://github.com/ajeetdsouza/zoxide
 winget install zoxide
 # - notepad $PROFILE

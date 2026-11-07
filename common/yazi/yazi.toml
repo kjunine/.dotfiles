@@ -22,8 +22,10 @@ image_delay = 100
 [opener]
 edit = [
   { run = '${EDITOR:-vim} "$@"', block = true, for = "unix" },
+  { run = 'nvim %*', block = true, for = "windows" },
 ]
 open = [
+  { run = 'start "" "%1"', orphan = true, desc = "Open", for = "windows" },
   { run = 'xdg-open "$@"', desc = "Open", for = "linux" },
   { run = 'open "$@"', desc = "Open", for = "macos" },
 ]

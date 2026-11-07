@@ -61,6 +61,7 @@ cd windows
 
 - Windows는 `common/` 대신 `windows/`의 전용 `.gitconfig`, `.gitignore_global`, `.tmux.conf`(psmux용, `clip.exe` 클립보드)를 사용
 - herdr 설정은 `common/herdr/config.toml`을 `%APPDATA%\herdr\config.toml`로 복사하고, 기본 쉘을 `pwsh.exe`로 지정 (`[terminal] default_shell`)
+- yazi 설정은 `common/yazi/*.toml`을 `%APPDATA%\yazi\config\`로 복사하고, mime 판별용으로 Git 동봉 `file.exe`를 `YAZI_FILE_ONE` 사용자 환경변수에 지정
 
 ## 공통 설정 파일
 
