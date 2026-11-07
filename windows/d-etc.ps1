@@ -11,10 +11,14 @@ winget install Neovim.Neovim
 
 # https://github.com/marlocarlo/psmux (Windows용 tmux)
 winget install --id marlocarlo.psmux
-# tmux 설정 + TPM (플러그인 매니저)
+# tmux 설정 + PPM (psmux용 플러그인 매니저, bash 기반 tpm은 Windows에서 동작 안 함)
+# psmux 안에서 Prefix + I 로 플러그인 설치
 Copy-Item "$PSScriptRoot\.tmux.conf" $HOME
-if (-not (Test-Path "$HOME\.tmux\plugins\tpm")) {
-  git clone https://github.com/tmux-plugins/tpm "$HOME\.tmux\plugins\tpm"
+if (-not (Test-Path "$HOME\.psmux\plugins\ppm")) {
+  git clone https://github.com/psmux/psmux-plugins.git "$env:TEMP\psmux-plugins"
+  New-Item -ItemType Directory -Force "$HOME\.psmux\plugins" | Out-Null
+  Copy-Item "$env:TEMP\psmux-plugins\ppm" "$HOME\.psmux\plugins\ppm" -Recurse
+  Remove-Item "$env:TEMP\psmux-plugins" -Recurse -Force
 }
 
 # https://herdr.dev/ (tmux 스타일 키바인딩, prefix Ctrl+a)
